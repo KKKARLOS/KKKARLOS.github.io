@@ -1,0 +1,874 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;900&family=Open+Sans:wght@400;700;800&family=Raleway:wght@400;900&display=swap"
+			rel="stylesheet"
+		/>
+		<script src="https://kit.fontawesome.com/3b6ee8ccaf.js" crossorigin="anonymous"></script>
+		<link rel="stylesheet" href="css/estilos.css" />
+		<link rel="stylesheet" href="dist/css/bootstrap.css" />
+		<title>Tarjeta de presentación de mi portafolio</title>
+	</head>
+	<body>
+		<header class="w100 flexRow">
+			<!-- menu hamburguesa-->
+			<div class="btn-burger oculto">
+				<img id="burger" src="img/open-menu.png" title="hamburguesa" />
+			</div>
+			<!-- Menu-->
+			<nav>
+				<ul id="menu-movil">
+					<li><a href="#" class="active">Inicio</a></li>
+					<li><a href="#portafolio">Portafolio</a></li>
+					<li><a href="#formacion">Formación</a></li>
+					<li><a href="#experiencia">Experiencia</a></li>
+					<li><a href="#skills">Skills</a></li>
+					<li><a href="#contacto">Contacto</a></li>
+				</ul>
+			</nav>
+		</header>
+		<div class="contenedor">
+			<div class="tarjeta">
+				<section class="slider-banner">
+					<div id="banner" class="banner">
+						<img class="slide active" src="img/banner.png" alt="" />
+						<img class="slide" src="img/banner4.png" alt="" />
+						<img class="slide" src="img/banner3.png" alt="" />
+					</div>
+					<a href="#" id="banner-prev" class="flecha-banner anterior"
+						><i class="fas fa-chevron-left"></i
+					></a>
+					<a href="#" id="banner-next" class="flecha-banner siguiente"
+						><i class="fas fa-chevron-right"></i
+					></a>
+				</section>
+				<section class="slider-info">
+					<section id="informacion" class="informacion">
+						<article id="info">
+							<div class="slide active">
+								<h1 class="nombre">Karlos Perdiguero Otxoa</h1>
+								<p class="trabajo">Desarrollador Web</p>
+								<p class="pais">
+									<img src="img/euskadi.png" alt="" /><span class="pais-img"
+										>&nbsp;&nbsp;Euskadi</span
+									>
+								</p>
+								<div class="flexRow lnks">
+									<a href="curriculum.doc" download="curriculum.doc" class="lnk">
+										<span class="txt">Descargar CV</span>
+										<i class="fas fa-paperclip"></i>
+									</a>
+									<a href="#contacto" onclick="location.href= '#contacto'" class="lnk">
+										<span class="txt">Contacto</span>
+										<i class="fas fa-envelope"></i>
+									</a>
+								</div>
+							</div>
+							<div class="slide">
+								<h2 class="subtitulo">
+									<i class="fab fa-html5 icono-banner"></i>Programador front-end
+								</h2>
+								<p class="texto">
+									Diseño responsive y Maquetación de páginas Web con HTML5, CSS3, Bootstrap,
+									JQuery, Javascript, Ajax, Sass, XML, Gestores de contenido con: DIVI, ...
+								</p>
+							</div>
+							<div class="slide">
+								<h2 class="subtitulo">
+									<i class="fas fa-code icono-banner"></i>Programador back-end
+								</h2>
+								<p class="texto">
+									Conocimiento de frameworks y lenguajes de programación como: .NET, C#,
+									Visual Basic, PHP, Laravel, Node.js, React Native, Android Studio, API
+									Rest, etc, ...
+									<br /><br />
+									Conexión a bases de datos relacionales y no relacionales: SQL Server,
+									MySql, Oracle, MongoDB, SQLite
+									<br /><br />
+									Mi misión es diseñar procesos que solucionen problemas concretos y
+									faciliten a los usuarios su interactuación.
+								</p>
+							</div>
+						</article>
+						<div class="botones" id="botones"></div>
+					</section>
+				</section>
+			</div>
+			<div class="portafolio" id="portafolio">
+				<div class="raya1 w80"></div>
+				<div class="raya2 w80"></div>
+				<h1 class="cab1">
+					<i class="fa fa-paint-brush icono-cab"></i><span class="fino">Mi</span> Portafolio web
+				</h1>
+				<form action="">
+					<input type="text" class="barra-busqueda" id="barra-busqueda" placeholder="Buscar" />
+				</form>
+				<div class="categorias" id="categorias">
+					<a href="#" class="activo">Todos</a>
+					<a href="#">Comida</a>
+					<a href="#">Deporte</a>
+					<a href="#">Rotulación</a>
+				</div>
+				<section class="grid" id="grid">
+					<div
+						class="item"
+						data-categoria="comida"
+						data-etiquetas="comida foodtruck restaurante tipi tapa"
+						data-descripcion="Diseño web de un food-truck.<br/><br/> Version : Ordenador y móvil. <br/>HTML5, CSS3, JQUERY<br/><br/>Para ir al sitio pulse click en la imagen/texto."
+						data-url="https://areafor.org/karlos/tipitapa/index.html"
+					>
+						<div class="item-contenido">
+							<img src="img/tipi_tapa.png" alt="" />
+						</div>
+					</div>
+
+					<div
+						class="item"
+						data-categoria="comida"
+						data-etiquetas="comida restaurante bare donosti"
+						data-descripcion="Diseño web de un restaurante vasco.<br/><br/> Version : Ordenador.<br/>HTML5, CSS3, JQUERY<br/><br/>Para ir al sitio pulse click en la imagen/texto."
+						data-url="https://areafor.org/karlos/barebare/index.html"
+					>
+						<div class="item-contenido">
+							<img src="img/bare_bare.png" alt="" />
+						</div>
+					</div>
+
+					<div
+						class="item"
+						data-categoria="rotulación"
+						data-etiquetas="neon rotulo imprenta"
+						data-descripcion="Diseño web de una empresa de rotulación.<br/><br/> Version : Ordenador y móvil.<br/>Gestor de contenidos DIVI (WORPRESS)<br/><br/>Para ir al sitio pulse click en la imagen/texto."
+						data-url="https://areafor.org/karlos2"
+					>
+						<div class="item-contenido">
+							<img src="img/rotulek.png" alt="" />
+						</div>
+					</div>
+
+					<div
+						class="item"
+						data-categoria="deporte"
+						data-etiquetas="deporte gym pesas cardio egia"
+						data-descripcion="Diseño web de un gymnasio.<br/><br/> Version : Ordenador y móvil.<br/>HTML5, CSS3, BOOTSTRAP, JQUERY<br/><br/>Para ir al sitio pulse click en la imagen/texto."
+						data-url="https://areafor.org/karlos/gym/index.html"
+					>
+						<div class="item-contenido">
+							<img src="img/egia_gym.png" alt="" />
+						</div>
+					</div>
+
+					<div
+						class="item"
+						data-categoria="deporte"
+						data-etiquetas="deporte surf tabla slap playa gros"
+						data-descripcion="Diseño web de una tienda de surf.<br/><br/> Version : Ordenador y móvil.<br/>Gestor de contenidos DIVI (WORPRESS)<br/><br/>Para ir al sitio pulse click en la imagen/texto."
+						data-url="https://areafor.org/karlos"
+					>
+						<div class="item-contenido">
+							<img src="img/slap.png" alt="" />
+						</div>
+					</div>
+
+					<div
+						class="item"
+						data-categoria="comida"
+						data-etiquetas="comida restaurante gaston peru"
+						data-descripcion="Diseño web de un restaurante peruano.<br/><br/> Version : Ordenador y móvil.<br/>HTML5, CSS3, BOOTSTRAP, JQUERY<br/><br/>Para acceder a la web pulse click ."
+						data-url="https://areafor.org/karlos/gaston/index.html"
+					>
+						<div class="item-contenido">
+							<img src="img/gaston.png" alt="" />
+						</div>
+					</div>
+				</section>
+
+				<section class="overlay" id="overlay">
+					<div class="contenedor-img">
+						<button id="btn-cerrar-popup"><i class="fas fa-times"></i></button>
+						<a href="" target="_blank"
+							><img id="imgApp" src="" alt="" />
+							<p class="descripcion">1.- Lorem ipsum dolor sit amet consectetur.</p></a
+						>
+					</div>
+				</section>
+			</div>
+			<div class="formacion" id="formacion">
+				<div class="raya1 w80"></div>
+				<div class="raya2 w80"></div>
+				<h1 class="cab1">
+					<i class="fa fa-university icono-cab"></i> <span class="fino">Mi</span> Formación
+				</h1>
+				<!--Accordion wrapper-->
+				<div class="accordion md-accordion" id="accordionEx" role="tablist" aria-multiselectable="true">
+					<!-- Accordion card -->
+					<div class="card">
+						<!-- Card header -->
+						<div class="card-header" role="tab" id="headingOne1">
+							<a
+								class="collapsed"
+								data-toggle="collapse"
+								data-parent="#accordionEx"
+								href="#collapseOne1"
+								aria-expanded="false"
+								aria-controls="collapseOne1"
+							>
+								<h5 class="mb-0">
+									<i class="fas fa-graduation-cap icono-fila"></i> LICENCIADO EN CIENCIAS
+									ECONOMICAS Y EMPRESARIALES<i class="fas fa-angle-down rotate-icon"></i>
+								</h5>
+							</a>
+						</div>
+
+						<!-- Card body -class='collapse show'  si quiero ver la tarjeta expandida y si quiero contraer quitar el show  y poner arriba en a : class: collapsed aria-expanded="true" Para mostrar la tarjeta-->
+						<div
+							id="collapseOne1"
+							class="collapse"
+							role="tabpanel"
+							aria-labelledby="headingOne1"
+							data-parent="#accordionEx"
+						>
+							<div class="card-body">
+								<ul class="mayor">
+									<li>Titulación: Universitaria Modalidad: Superior</li>
+									<li>Especialidad: Comercial</li>
+									<li>Centro: UNIVERSIDAD DEL PAIS VASCO</li>
+									<li>Fechas: 1992 - 1998</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<!-- Accordion card -->
+
+					<!-- Accordion card -->
+					<div class="card">
+						<!-- Card header -->
+						<div class="card-header" role="tab" id="headingTwo2">
+							<a
+								class="collapsed"
+								data-toggle="collapse"
+								data-parent="#accordionEx"
+								href="#collapseTwo2"
+								aria-expanded="false"
+								aria-controls="collapseTwo2"
+							>
+								<h5 class="mb-0">
+									<i class="fas fa-graduation-cap icono-fila"></i> GRADO SUPERIOR EN
+									INFORMÁTICA DE GESTIÓN<i class="fas fa-angle-down rotate-icon"></i>
+								</h5>
+							</a>
+						</div>
+
+						<!-- Card body -->
+						<div
+							id="collapseTwo2"
+							class="collapse"
+							role="tabpanel"
+							aria-labelledby="headingTwo2"
+							data-parent="#accordionEx"
+						>
+							<div class="card-body">
+								<ul class="mayor">
+									<li>Titulación: No Universitaria Modalidad: Superior</li>
+									<li>GESTION INFORMATICA</li>
+									<li>Centro de Estudios SEIM</li>
+									<li>Fechas: 1984 - 1986</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<!-- Accordion card -->
+
+					<!-- Accordion card -->
+					<div class="card">
+						<!-- Card header -->
+						<div class="card-header" role="tab" id="headingThree3">
+							<a
+								class="collapsed"
+								data-toggle="collapse"
+								data-parent="#accordionEx"
+								href="#collapseThree3"
+								aria-expanded="false"
+								aria-controls="collapseThree3"
+							>
+								<h5 class="mb-0">
+									<i class="fas fa-graduation-cap icono-fila"></i>
+									DISEÑO Y PROGRAMACIÓN WEB
+									<i class="fas fa-angle-down rotate-icon"></i>
+								</h5>
+							</a>
+						</div>
+
+						<!-- Card body -->
+						<div
+							id="collapseThree3"
+							class="collapse"
+							role="tabpanel"
+							aria-labelledby="headingThree3"
+							data-parent="#accordionEx"
+						>
+							<div class="card-body">
+								<ul class="mayor">
+									<li>Titulación: No Universitaria Certificado IFCD0110</li>
+									<li>DISEÑO Y MAQUETACIÓN DE PÁGINAS WEB</li>
+									<li>Centro de Estudios AREA</li>
+									<li>Fechas: 2019 - 2020</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+
+					<div class="card">
+						<!-- Card header -->
+						<div class="card-header" role="tab" id="headingThree4">
+							<a
+								class="collapsed"
+								data-toggle="collapse"
+								data-parent="#accordionEx"
+								href="#collapseThree4"
+								aria-expanded="false"
+								aria-controls="collapseThree4"
+							>
+								<h5 class="mb-0">
+									<i class="fas fa-graduation-cap icono-fila"></i>
+									OTRA FORMACIÓN
+									<i class="fas fa-angle-down rotate-icon"></i>
+								</h5>
+							</a>
+						</div>
+
+						<!-- Card body -->
+						<div
+							id="collapseThree4"
+							class="collapse"
+							role="tabpanel"
+							aria-labelledby="headingThree4"
+							data-parent="#accordionEx"
+						>
+							<div class="card-body">
+								<ul class="mayor">
+									<li>
+										Curso y proyectos realizados con PHP / MySQL / Laravel/ Android
+										Studio(2018)
+									</li>
+									<li>Mejores prácticas SQL (2017)</li>
+									<li>Diseño Web con Bootstrap (2016)</li>
+									<li>Arquitectura javascript para aplicaciones web (nivel avanzado)</li>
+									<li>ASP.NET MVC 5 + Jquery avanzado</li>
+									<li>Microsoft SQL Server 2008</li>
+									<li>Programación C#</li>
+									<li>Programación Orientada a objetos</li>
+									<li>Arquitectura javascript para aplicaciones web (nivel avanzado)</li>
+									<li>Developing Microsoft .NET Applications for Windows (Visual C#.Net)</li>
+									<li>MOC-2524 Desarrollo de servicios Web XML con ASP.NET</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<!-- Accordion card -->
+				</div>
+				<!-- Accordion wrapper -->
+			</div>
+			<div class="experiencia" id="experiencia">
+				<div class="raya1 w80"></div>
+				<div class="raya2 w80"></div>
+				<h1 class="cab1">
+					<i class="fa fa-briefcase icono-cab"></i> <span class="fino">Mi</span> Experiencia
+				</h1>
+				<!--Accordion wrapper-->
+				<div class="accordion md-accordion" id="accordionEx2" role="tablist" aria-multiselectable="true">
+					<!-- Accordion card -->
+					<div class="card">
+						<!-- Card header -->
+						<div class="card-header" role="tab" id="headingOne1a">
+							<a
+								class="collapsed"
+								data-toggle="collapse"
+								data-parent="#accordionEx2"
+								href="#collapseOne1a"
+								aria-expanded="false"
+								aria-controls="collapseOne1a"
+							>
+								<h5 class="mb-0">
+									<i class="fas fa-calendar-alt icono-fila"></i>2017 - 2018<i
+										class="fas fa-angle-down rotate-icon"
+									></i>
+								</h5>
+							</a>
+						</div>
+
+						<!-- Card body -class='collapse show'  Para mostrar la tarjeta-->
+						<div
+							id="collapseOne1a"
+							class="collapse"
+							role="tabpanel"
+							aria-labelledby="headingOne1a"
+							data-parent="#accordionEx2"
+						>
+							<div class="card-body">
+								<ul class="mayor">
+									<li>
+										ANALISTA / PROGRAMADOR - MERCEDES-BENZ (VITORIA)<br /><br />
+										- Análisis, desarrollo e implementación de servicios automáticos para
+										la transferencia de datos entre sistemas (.NET, Oracle,
+										SQL-Server).<br /><br />
+									</li>
+									<li>
+										DESARROLLADOR - CLINICA UNIVERSIDAD DE NAVARRA (PAMPLONA)<br /><br />
+										- Implantación y desarrollo de aplicaciones de la clínica (Visual
+										Studio – Visual Basic)<br /><br />
+									</li>
+									<li>
+										DESARROLLADOR – IMQ (BILBAO)<br /><br />
+										- Colaboración en la mejora de los tiempos de respuestas de pantallas
+										críticas de la aplicación, a nivel de SQL’s, arquitectura de la
+										aplicación, y uso correcto de objetos de datos<br />
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<!-- Accordion card -->
+
+					<!-- Accordion card -->
+					<div class="card">
+						<!-- Card header -->
+						<div class="card-header" role="tab" id="headingTwo2a">
+							<a
+								class="collapsed"
+								data-toggle="collapse"
+								data-parent="#accordionEx2"
+								href="#collapseTwo2a"
+								aria-expanded="false"
+								aria-controls="collapseTwo2a"
+							>
+								<h5 class="mb-0">
+									<i class="fas fa-calendar-alt icono-fila"></i>2016 - 2017<i
+										class="fas fa-angle-down rotate-icon"
+									></i>
+								</h5>
+							</a>
+						</div>
+
+						<!-- Card body -->
+						<div
+							id="collapseTwo2a"
+							class="collapse"
+							role="tabpanel"
+							aria-labelledby="headingTwo2a"
+							data-parent="#accordionEx2"
+						>
+							<div class="card-body">
+								<ul class="mayor">
+									<li>
+										ANALISTA / PROGRAMADOR – IAP 3.0<br /><br />
+										- Reporte de consumos en tareas para multinavegador y multidispositivo
+										(NET, MVC, HTLML5, JQUERY, SQL SERVER, BOOTSTRAP, CRYSTAL REPORTS)<br />
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<!-- Accordion card -->
+
+					<!-- Accordion card -->
+					<div class="card">
+						<!-- Card header -->
+						<div class="card-header" role="tab" id="headingThree3a">
+							<a
+								class="collapsed"
+								data-toggle="collapse"
+								data-parent="#accordionEx2"
+								href="#collapseThree3a"
+								aria-expanded="false"
+								aria-controls="collapseThree3a"
+							>
+								<h5 class="mb-0">
+									<i class="fas fa-calendar-alt icono-fila"></i>
+									2014 - 2017
+									<i class="fas fa-angle-down rotate-icon"></i>
+								</h5>
+							</a>
+						</div>
+
+						<!-- Card body -->
+						<div
+							id="collapseThree3a"
+							class="collapse"
+							role="tabpanel"
+							aria-labelledby="headingThree3a"
+							data-parent="#accordionEx2"
+						>
+							<div class="card-body">
+								<ul class="mayor">
+									<li>
+										ANALISTA / PROGRAMADOR – PROYECTOS INTERNOS IBERMATICA<br /><br />
+										- Migración de de aplicaciones corporativas a multinavegador (NET,
+										HTLML5, JAVASCRIPT, JQUERY, BOOTSTRAP, SQL SERVER 2008, CRYSTAL
+										REPORTS).
+										<br /><br />
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+
+					<div class="card">
+						<!-- Card header -->
+						<div class="card-header" role="tab" id="headingThree4a">
+							<a
+								class="collapsed"
+								data-toggle="collapse"
+								data-parent="#accordionEx2"
+								href="#collapseThree4a"
+								aria-expanded="false"
+								aria-controls="collapseThree4a"
+							>
+								<h5 class="mb-0">
+									<i class="fas fa-calendar-alt icono-fila"></i>
+									1998 - 2013
+									<i class="fas fa-angle-down rotate-icon"></i>
+								</h5>
+							</a>
+						</div>
+
+						<!-- Card body -->
+						<div
+							id="collapseThree4a"
+							class="collapse"
+							role="tabpanel"
+							aria-labelledby="headingThree4a"
+							data-parent="#accordionEx2"
+						>
+							<div class="card-body">
+								<ul class="mayor">
+									<li>
+										ANALISTA / PROGRAMADOR – PROYECTOS INTERNOS IBERMATICA<br /><br />
+										- Desarrollo de software de gestión interna de recursos. (.NET, MVC,
+										HTLML5, JAVASCRIPT, BOOTSTRAP, SQL SERVER, CRYSTAL REPORTS).
+										<br /><br />
+										SIC (Sistema Información Comercial)<br />
+										ROBOCOR (Robot de Correo)<br />
+										CURVIT(Gestión de los Currículums)<br />
+										PROGRESS (Sistema de Evaluación de los empleados por sus
+										supervisores)<br />
+										RH++ (Gestión de candidatos e incorporaciones) <br />
+										GASVI (Liquidación de gastos de viaje) <br />
+										PGE (Gestión Económica de Proyectos) <br />
+										PST (Planificación y Seguimiento Técnico) <br />
+										IAP (Informe de Actividad y Progreso ) <br />
+										CR2I (Sistema para reserva de salas) <br />
+										FICEPI (Fichero Central de Personas) <br />
+										GESTAR (Gestión de tareas)<br />
+										MAPACON(Gestión del conocimiento) <br />
+										Otras (Eco, En Forma, Dossieres, etc)<br />
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<!-- Accordion card -->
+				</div>
+				<!-- Accordion wrapper -->
+			</div>
+			<div class="skills" id="skills">
+				<div class="raya1 w80"></div>
+				<div class="raya2 w80"></div>
+				<h1 class="cab2 mt-5 mb-5">
+					<i class="fas fa-tools icono-cab"></i> <span class="fino">Mis</span> Skills
+				</h1>
+				<h3 class="mt-5 mb-5"><i class="fab fa-html5 icono-banner"></i>Front-End</h3>
+				<div class="row mt-5">
+					<div class="col-lg-12">
+						<h6>HTML5</h6>
+						<div class="progress mb-5">
+							<div
+								class="progress-bar bg-success progress-bar-striped progress-bar-animated"
+								style="width: 85%"
+							>
+								85%
+							</div>
+						</div>
+						<h6>CSS3 &amp; SASS</h6>
+						<div class="progress mb-5">
+							<div
+								class="progress-bar bg-info progress-bar-striped progress-bar-animated"
+								style="width: 75%"
+							>
+								75%
+							</div>
+						</div>
+						<h6>Javascript & Jquery</h6>
+						<div class="progress mb-5">
+							<div
+								class="progress-bar bg-warning progress-bar-striped progress-bar-animated"
+								style="width: 80%"
+							>
+								80%
+							</div>
+						</div>
+						<h6>Bootstrap & Web Design</h6>
+						<div class="progress mb-5">
+							<div
+								class="progress-bar bg-success progress-bar-striped progress-bar-animated"
+								style="width: 70%"
+							>
+								70%
+							</div>
+						</div>
+						<h6>Photoshop & Adobe XD</h6>
+						<div class="progress mb-5">
+							<div
+								class="progress-bar bg-danger progress-bar-striped progress-bar-animated"
+								style="width: 65%"
+							>
+								65%
+							</div>
+						</div>
+						<h6>Android Studio</h6>
+						<div class="progress mb-5">
+							<div
+								class="progress-bar bg-info progress-bar-striped progress-bar-animated"
+								style="width: 70%"
+							>
+								75%
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="circles">
+					<h3 class="mb-5"><i class="fas fa-code icono-banner"></i>Back-End</h3>
+					<div class="row">
+						<div class="col-6 col-sm-6 col-md-3">
+							<div class="circle" id="backend-1">
+								<strong></strong>
+								<span><img src="img/php2.png" alt="" /> &nbsp;PHP</span>
+							</div>
+						</div>
+
+						<div class="col-6 col-sm-6 col-md-3">
+							<div class="circle" id="backend-2">
+								<strong></strong>
+								<span><img src="img/csharp2.png" alt="" /> &nbsp;C#</span>
+							</div>
+						</div>
+
+						<div class="col-6 col-sm-6 col-md-3">
+							<div class="circle" id="backend-3">
+								<strong></strong>
+								<span><img src="img/database2.png" alt="" /> SQL Server/MySQL</span>
+							</div>
+						</div>
+
+						<div class="col-6 col-sm-6 col-md-3">
+							<div class="circle" id="backend-4">
+								<strong></strong>
+								<span><img src="img/javascript2.png" alt="" />Javascript/NodeJS</span>
+							</div>
+						</div>
+
+						<div class="col-6 col-sm-6 col-md-3">
+							<div class="circle" id="backend-5">
+								<strong></strong>
+								<span><img src="img/git.png" alt="" />&nbsp;&nbsp;GIT</span>
+							</div>
+						</div>
+						<div class="col-6 col-sm-6 col-md-3">
+							<div class="circle" id="backend-6">
+								<strong></strong>
+								<span><img src="img/visual-studio.png" alt="" />&nbsp;Visual Basic</span>
+							</div>
+						</div>
+						<div class="col-6 col-sm-6 col-md-3">
+							<div class="circle" id="backend-7">
+								<strong></strong>
+								<span><img src="img/report.png" alt="" />&nbsp;Crystal Reports</span>
+							</div>
+						</div>
+						<div class="col-6 col-sm-6 col-md-3">
+							<div class="circle" id="backend-8">
+								<strong></strong>
+								<span><img src="img/mongodb.png" alt="" />&nbsp;MongoDB/SQLite</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="idiomas" id="idiomas">
+					<div class="raya1 w80"></div>
+					<div class="raya2 w80"></div>
+					<h1 class="cab1"><i class="fa fa-flag icono-cab"></i> Idiomas</h1>
+					<div>
+						<ul>
+							<li>
+								<span class="verde">Inglés</span>
+								<ul>
+									<li>
+										<span>Lectura</span>
+										<div id="ing-lectura"></div>
+									</li>
+									<li>
+										<span>Escritura</span>
+										<div id="ing-escritura"></div>
+									</li>
+									<li>
+										<span>Oral</span>
+										<div id="ing-oral"></div>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<span class="verde">Francés</span>
+								<ul>
+									<li>
+										<span>Lectura</span>
+										<div id="fr-lectura"></div>
+									</li>
+									<li>
+										<span>Escritura</span>
+										<div id="fr-escritura"></div>
+									</li>
+									<li>
+										<span>Oral</span>
+										<div id="fr-oral"></div>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<span class="verde">Euskera</span>
+								<ul>
+									<li>
+										<span>Lectura</span>
+										<div id="eu-lectura"></div>
+									</li>
+									<li>
+										<span>Escritura</span>
+										<div id="eu-escritura"></div>
+									</li>
+									<li>
+										<span>Oral</span>
+										<div id="eu-oral"></div>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="contacto" id="contacto">
+				<div class="raya1 w80"></div>
+				<div class="raya2 w80"></div>
+				<h1 class="cab1"><i class="fa fa-address-card icono-cab"></i> Contacto</h1>
+				<div class="row mt-100 localizacion text-center">
+					<div class="col-6 col-sm-6 col-md-4 mt-5">
+						<i class="fas fa-map-marker-alt"></i>
+						<h4 class="mt-5 negro prueba">
+							Parke Alkolea nº 11 - 1º - izquierda<br />
+							Barrio de Egia<br />
+							2012 Donostia-San Sebastián<br /><br />
+						</h4>
+					</div>
+					<div class="col-6 col-sm-6 col-md-4 mt-5">
+						<i class="fas fa-envelope"></i>
+						<h4 class="mt-5 negro prueba">jc.perdiguerocarlos@gmail.com</h4>
+					</div>
+					<div class="col-6 col-sm-6 col-md-4 mt-5">
+						<i class="fas fa-phone-alt"></i>
+						<h4 class="mt-5 negro prueba">Móvil: 666702836</h4>
+					</div>
+				</div>
+				<form class="mt-5" method="post" action="correo.php">
+					<div class="form-row pad-10 mt-100">
+						<div class="form-group col-12 col-sm-12 col-md-4">
+							<input
+								name="nombre"
+								type="nombre"
+								class="form-control w-90 bordeBajo"
+								id="nombre"
+								required
+								placeholder="Tu nombre y apellidos"
+							/>
+						</div>
+						<div class="form-group col-12 col-sm-12 col-md-4">
+							<input
+								name="email"
+								type="email"
+								class="form-control w-90 bordeBajo"
+								id="email"
+								placeholder="Tu email"
+								required
+							/>
+						</div>
+						<div class="form-group col-12 col-sm-12 col-md-4">
+							<input
+								name="telefono"
+								type="telefono"
+								class="form-control w-90 bordeBajo"
+								id="telefono"
+								placeholder="Tu teléfono"
+								required
+							/>
+						</div>
+					</div>
+					<div class="form-row mt-3 pad-10">
+						<div class="form-group col-12 col-sm-12 col-md-12">
+							<textarea
+								class="form-control w-90 bordeBajo"
+								name="observaciones"
+								id="observaciones"
+								rows="3"
+								placeholder="Escribe el mensaje"
+							></textarea>
+						</div>
+					</div>
+					<div class="form-row mt-1 pad-10 text-center">
+						<div class="form-group col-12 col-sm-12 col-md-12 mt-50">
+							<button
+								id="btn-imc"
+								type="submit"
+								class="btn btn-danger btn-lg btn-call_to_action blanco"
+							>
+								Enviar
+							</button>
+						</div>
+					</div>
+				</form>
+			</div>
+			<footer class="mt-150">
+				<div class="redes-sociales">
+					<div class="contenedor-icono">
+						<a href="#" onclick="return false" target="_blank" class="twitter">
+							<i class="fab fa-twitter"></i>
+						</a>
+					</div>
+					<div class="contenedor-icono">
+						<a href="#" onclick="return false" target="_blank" class="facebook">
+							<i class="fab fa-facebook-f"></i>
+						</a>
+					</div>
+					<div class="contenedor-icono">
+						<a href="#" onclick="return false" target="_blank" class="instagram">
+							<i class="fab fa-instagram"></i>
+						</a>
+					</div>
+				</div>
+				<div class="creado-por">
+					<p class="mb-5">Sitio diseñado por <a href="#">Karlos Perdiguero Otxoa</a></p>
+					<br />
+				</div>
+			</footer>
+		</div>
+		<script src="https://cdn.jsdelivr.net/npm/web-animations-js@2.3.2/web-animations.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/muuri@0.9.3/dist/muuri.min.js"></script>
+		<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+		<script
+			src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+			integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+			crossorigin="anonymous"
+		></script>
+		<script src="js/circle-progress.js"></script>
+		<script src="js/main.js"></script>
+	</body>
+</html>
