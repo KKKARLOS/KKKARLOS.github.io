@@ -1,0 +1,1110 @@
+:root {
+	--color-primary: rgba(189, 152, 60, 1);
+	--color-primary-light: rgba(189, 152, 60, 0.7);
+	--color-secondary-light: rgba(0, 0, 0, 0.4);
+}
+/*Reseteo valorres iniciales*/
+* {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+.carousel-item {
+	cursor: pointer;
+}
+.carousel-indicators {
+	bottom: 20px;
+}
+.carousel-caption {
+	/*position: absolute;
+	right: 15%;
+	left: 15%;
+	z-index: 10;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	color: #fff;
+	text-align: center;*/
+	bottom: 70px;
+}
+.bg-video {
+	width: 100%;
+	height: 700px;
+	/*position: absolute;
+	top: 0px;
+	right: 0px;
+	z-index: 10px;*/
+	background-size: contain; /*100%*/
+	background-color: #000;
+	background-position: center;
+	object-fit: cover;
+}
+/*anchos*/
+.container-fluid {
+	padding: 0px;
+	margin: 0px;
+}
+.w100 {
+	width: 100%;
+}
+.w50 {
+	width: 50%;
+}
+.w55 {
+	width: 55%;
+	margin: auto;
+	text-align: center;
+}
+.w87-5 {
+	width: 87.5%;
+	margin: auto;
+	text-align: center;
+}
+/*configuraciones flex*/
+.flexRow {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+}
+.noWrap {
+	flex-wrap: nowrap;
+}
+/*cabecera*/
+header {
+	position: fixed;
+	top: 0px;
+	z-index: 10;
+	margin: auto;
+	height: 70px;
+	font-family: Roboto;
+	font-size: 1em;
+	font-weight: 400;
+	background-color: rgba(0, 0, 0, 1);
+}
+/*navegacion*/
+nav {
+	width: 70%;
+	/*background-color: aqua;*/
+}
+nav ul {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	list-style: none;
+	padding: 0px;
+	margin: 0px;
+	/*background-color: #333;*/
+}
+/* quiere decir que todos los ítems(li) tienen que crecer  en igual proporción, 
+hasta ocupar todo el espacio disponible.  */
+
+nav ul li a {
+	display: block;
+	width: 155px;
+	height: 40px;
+	font-family: Verdana, sans-serif;
+	color: white;
+	text-decoration: none !important;
+	padding: 0.5em 1em;
+	text-align: center;
+	/*añadido*/
+	background-image: linear-gradient(currentColor, currentColor);
+	background-position: 0% 100%;
+	background-repeat: no-repeat;
+	background-size: 0% 5px;
+	transition: background-size 0.3s;
+	font-size: 1em;
+}
+nav ul li a:hover,
+nav ul li a:focus {
+	background-color: black;
+	color: white;
+	/*añadido*/
+	background-size: 100% 2px;
+}
+
+.redes-sociales {
+	width: 10%;
+	color: white;
+	padding-top: 12px;
+	vertical-align: middle;
+	cursor: pointer;
+}
+/*Imagen principal*/
+.banner {
+	position: relative;
+	height: 700px;
+	margin-bottom: 50px;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed; /* paralax*/
+}
+.bannerSlide {
+	font-family: Roboto;
+	font-size: 10vw;
+	text-shadow: 2px 2px 8px gray;
+}
+.inicio {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%),
+		url(../imagenes/barebare/inicio.png);
+	/*background-image: url(../imagenes/barebare/inicio.png);*/
+}
+/*Texto en imagen*/
+.txtban {
+	position: absolute;
+	color: rgba(255, 255, 255, 1);
+	font-family: Hiyida Script Demo;
+	font-weight: 900;
+}
+.txtban1 {
+	top: 100px;
+	left: 230px;
+	font-size: 5em;
+	letter-spacing: 4px;
+}
+.txtban2 {
+	top: 180px;
+	left: 230px;
+	font-size: 5em;
+	letter-spacing: 12px;
+}
+.manchaBlanca {
+	top: 230px;
+	left: 460px;
+	width: 150px;
+	height: 29px;
+}
+.txtban3 {
+	top: 85px;
+	left: 640px;
+	font-size: 11em;
+	letter-spacing: 16px;
+}
+.txtcontacto {
+	padding: 20px;
+	margin: auto;
+	text-align: left;
+	width: 40%;
+	font-family: Roboto;
+	font-weight: bolder;
+	font-size: 1em;
+	letter-spacing: 2px;
+	background-color: var(--color-primary-light);
+	/*background-color: rgb(0, 0, 0, 0.5);*/
+}
+.txtcontacto2 {
+	font-size: 10vw;
+	padding: 0px 0px;
+	margin: auto;
+	text-align: center;
+	background-color: rgba(0, 0, 0, 0.3);
+}
+/*Contenedor 3 imagenes*/
+.s-3-images {
+	padding: 30px;
+	height: 570px;
+	background-image: url(../imagenes/barebare/aitor-oyarzabal2.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.cw-30 {
+	width: 30%;
+	/*new*/
+	overflow: hidden;
+	text-align: center;
+	cursor: pointer;
+	position: relative;
+}
+.cw-30 img {
+	width: 100%;
+	border: 0px;
+}
+
+/*new*/
+.fR-aC {
+	justify-content: center;
+}
+
+.container,
+.container-lg {
+	max-width: 1530px;
+}
+
+.cw-30:hover .foto {
+	/*animacionparalaimagenenhover*/
+	position: relative;
+	/*parapòdermoverla*/ /*animacion,bajardesdearriba*/
+	animation: animbajar 0.7s ease;
+	-webkit-animation: animbajar 0.7s ease;
+}
+.cw-30 > h2 {
+	text-align: center;
+	color: rgba(189, 152, 60, 1);
+	position: absolute;
+	top: 15px;
+	left: 30%;
+	font-size: 45px;
+	font-weight: bolder;
+	z-index: 1000;
+}
+.cw-30:hover h2 {
+	/*colorfinalyanimaciondeltituloenhover*/ /*animacion*/
+	animation: animbajar 0.8s ease;
+}
+
+/*Raya*/
+hr {
+	margin: 3px 0px 3px 0px;
+	background-color: var(--color-primary-light); /* rgb(242, 213, 135, 1); */
+	height: 3px;
+	border: none;
+}
+
+hr.w50 {
+	width: 47%;
+	display: inline-block;
+}
+
+.raya {
+	width: 32%;
+}
+.raya2 {
+	width: 25%;
+}
+.raya3 {
+	width: 7%;
+}
+
+/*Margenes*/
+.mb50 {
+	margin-bottom: 50px;
+}
+.mtb50 {
+	margin: 50px 0px;
+}
+.mt90 {
+	margin-top: 90px;
+}
+.mt150 {
+	margin-top: 150px;
+}
+
+/*Paddings*/
+.p-25 {
+	padding-left: 25px;
+}
+.p-50 {
+	padding-left: 50px;
+}
+/*Bloques al 50% para imagenes en sección SERVICIOS*/
+.c-50 {
+	width: 50%;
+	height: 560px;
+	/*text-align: left;*/
+}
+/*Bloques al 60% para imagenes en sección RESERVAS*/
+.c-60 {
+	width: 60%;
+	height: 640px;
+	/*text-align: left;*/
+}
+/* clase comun para  imagenes en background*/
+.bg-comun {
+	cursor: pointer;
+	width: 50%;
+	height: 560px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	overflow: hidden;
+	position: relative;
+}
+/* comedor*/
+#bg-comedor.lazy {
+	background-image: none;
+	background-color: #f1f1fa;
+}
+#bg-comedor {
+	background-image: url(../imagenes/barebare/comedor.png);
+}
+#bg-comedor:hover {
+	background-image: url(../imagenes/barebare/comedor_bn.png);
+}
+/* pintxos*/
+#bg-varios.lazy {
+	background-image: none;
+	background-color: #f1f1fa;
+}
+#bg-varios {
+	background-image: url(../imagenes/barebare/varios.png);
+}
+#bg-varios:hover {
+	background-image: url(../imagenes/barebare/varios_bn.png);
+}
+/* bodega*/
+#bg-bodega.lazy {
+	background-image: none;
+	background-color: #f1f1fa;
+}
+#bg-bodega {
+	background-image: url(../imagenes/barebare/bodega.png);
+}
+#bg-bodega:hover {
+	background-image: url(../imagenes/barebare/bodega_bn.png);
+}
+/* eventos*/
+#bg-eventos.lazy {
+	background-image: none;
+	background-color: #f1f1fa;
+}
+#bg-eventos {
+	background-image: url(../imagenes/barebare/eventos.png);
+}
+#bg-eventos:hover {
+	background-image: url(../imagenes/barebare/eventos_bn.png);
+}
+/* fachada*/
+#bg-fachadabar.lazy {
+	background-image: none;
+	background-color: #f1f1fa;
+}
+#bg-fachadabar {
+	background-image: url(../imagenes/barebare/fachadabar.png);
+}
+#bg-fachadabar:hover {
+	background-image: url(../imagenes/barebare/fachadabar_bn.png);
+}
+
+/*Sección tarjeta*/
+.fondoCard {
+	background-color: rgba(51, 51, 51, 0.15);
+	position: relative;
+}
+.txtCard {
+	position: absolute;
+	text-align: center;
+	padding: 30px;
+}
+.titularCard {
+	color: black;
+	top: 52px;
+	left: 0px;
+	width: 100%;
+	font-family: roboto;
+	font-size: 2.5em;
+	font-weight: bold;
+	letter-spacing: 4px;
+}
+.bodyCard {
+	top: 160px;
+	left: 0px;
+}
+.pieCard {
+	width: 100%;
+	left: 0px;
+}
+
+/*Estilos boton*/
+.button {
+	border-radius: 4px;
+	background-color: var(--color-primary); /*rgb(189, 152, 60);*/
+	border: none;
+	color: #ffffff;
+	text-align: center;
+	font-size: 1.1em;
+	padding: 10px;
+	width: 230px;
+	transition: all 0.5s;
+	cursor: pointer;
+	margin: 10px;
+	vertical-align: middle;
+}
+
+.button span {
+	cursor: pointer;
+	position: relative;
+	transition: 0.5s;
+}
+
+.button span:after {
+	content: "\00bb";
+	position: absolute;
+	opacity: 0;
+	top: 0;
+	right: -20px;
+	transition: 0.5s;
+}
+.button:hover span {
+	padding-right: 25px;
+}
+.button:hover span:after {
+	opacity: 1;
+	right: 0;
+}
+
+/*Estilos generales para el cuerpo*/
+body {
+	font-family: montserrat, sans-serif;
+	font-size: 1.1em;
+	font-weight: 700;
+	line-height: 1.42857143;
+	letter-spacing: 1px;
+	color: rgba(0, 0, 0, 0.6);
+	background-color: #fff;
+}
+h1 {
+	display: block;
+	font-family: Roboto;
+	font-weight: 800;
+	font-size: 2em;
+	color: black;
+	/*background-color: yellow;*/
+	text-align: center;
+	letter-spacing: 6px;
+}
+h3 {
+	font-family: Roboto;
+	font-weight: 900;
+	color: black;
+	padding: 20px 0px;
+}
+footer {
+	margin: auto;
+	height: 200px;
+	font-family: Roboto;
+	font-size: 1em;
+	font-weight: 400;
+	line-height: 20px;
+	/*background-color: rgb(10, 9, 9);*/
+	color: white;
+}
+.sa_flex {
+	justify-content: space-around;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.6) 100%),
+		url(../imagenes/barebare/parrilla.png);
+	z-index: -100;
+}
+.col-texto {
+	height: auto;
+	color: white;
+	text-align: left;
+	margin: 30px 0px;
+}
+.col-texto a {
+	color: white;
+	text-decoration: none;
+}
+.col-texto ul {
+	list-style: none;
+}
+/*columnas pie de pagina*/
+.col-5-texto {
+	width: 20%;
+	height: auto;
+	color: white;
+	text-align: left;
+	margin: 30px 0px;
+}
+.col-5-texto a {
+	color: white;
+	text-decoration: none;
+}
+.col-5-texto ul {
+	list-style: none;
+}
+
+/*Restaurante*/
+.restaurante {
+	/*background-image: linear-gradient(rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%),
+		url(../imagenes/restaurante/banner_restaurante.png);*/
+	background-image: url(../imagenes/restaurante/b_restaurante.png);
+}
+.bg-com-rest {
+	cursor: pointer;
+	width: 23%;
+	height: 560px;
+	margin-left: 2%;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.bg-com2-rest {
+	cursor: pointer;
+	width: 23%;
+	height: 560px;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.bg-com3-rest {
+	cursor: pointer;
+	width: 23%;
+	height: 560px;
+	margin-left: 2%;
+	margin-right: 2%;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+/* entrantes*/
+#bg-entrantes1.lazy {
+	background-image: none;
+	background-color: #f1f1fa;
+}
+#bg-entrantes1 {
+	background-image: url(../imagenes/restaurante/entrantes1.png);
+}
+
+#bg-entrantes2.lazy {
+	background-image: none;
+	background-color: #f1f1fa;
+}
+#bg-entrantes2 {
+	background-image: url(../imagenes/restaurante/entrantes2.png);
+}
+/* carnes*/
+#bg-carne1.lazy {
+	background-image: none;
+	background-color: #f1f1fa;
+}
+#bg-carne1 {
+	background-image: url(../imagenes/restaurante/carne1.png);
+}
+
+#bg-carne2.lazy {
+	background-image: none;
+	background-color: #f1f1fa;
+}
+#bg-carne2 {
+	background-image: url(../imagenes/restaurante/carne2.png);
+}
+/* pescados*/
+#bg-pescado1.lazy {
+	background-image: none;
+	background-color: #f1f1fa;
+}
+#bg-pescado1 {
+	background-image: url(../imagenes/restaurante/pescado1.png);
+}
+
+#bg-pescado2.lazy {
+	background-image: none;
+	background-color: #f1f1fa;
+}
+#bg-pescado2 {
+	background-image: url(../imagenes/restaurante/pescado2.png);
+}
+/* postres*/
+#bg-postre1.lazy {
+	background-image: none;
+	background-color: #f1f1fa;
+}
+#bg-postre1 {
+	background-image: url(../imagenes/restaurante/postre1.png);
+}
+#bg-postre2.lazy {
+	background-image: none;
+	background-color: #f1f1fa;
+}
+#bg-postre2 {
+	background-image: url(../imagenes/restaurante/postre2.png);
+}
+.txtCardMenu {
+	position: absolute;
+	text-align: center;
+	padding: 10px;
+}
+.titularCardMenu {
+	color: black;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	font-family: roboto;
+	font-size: 2.5em;
+	font-weight: bold;
+	letter-spacing: 4px;
+}
+.bodyCardMenu {
+	position: absolute;
+	top: 100px;
+	left: 0px;
+	width: 100%;
+	padding-right: 15px;
+}
+.txtLinea {
+	width: 86.5%;
+	text-align: left;
+	line-height: 40px;
+	font-family: roboto;
+	font-size: 1em;
+	font-weight: regular;
+	letter-spacing: 4px;
+	padding: 0px 5px;
+	/*background-color: red;*/
+}
+.txtLinea p {
+	border-bottom: 0.5px solid var(--color-primary-light); /*  rgb(242, 213, 135, 1);*/
+}
+.importeLinea {
+	width: 13.5%;
+	text-align: right;
+	line-height: 40px;
+	font-family: roboto;
+	font-size: 1em;
+	font-weight: regular;
+	letter-spacing: 4px;
+	/*background-color: blue;*/
+}
+.importeLinea p {
+	border-bottom: 0.5px solid var(--color-primary-light); /*  rgb(242, 213, 135, 1);*/
+}
+/*Contenedor 4 imagenes*/
+.s-4-images {
+	padding: 30px;
+	height: 430px;
+	background-image: url(../imagenes/barebare/aitor-oyarzabal2.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.cw-25 {
+	/*width: 25%;*/
+	position: relative;
+}
+.cw-20 img {
+	width: 100%;
+	height: 100%;
+	margin: auto;
+}
+.carta {
+	position: absolute;
+	left: 0px;
+	bottom: 0px;
+	background-color: var(--color-primary-light);
+	height: 65px;
+	width: 100%;
+	text-align: center;
+	vertical-align: middle;
+	z-index: 10;
+	color: white;
+	cursor: pointer;
+	padding-top: 1.3em;
+}
+.carta:hover {
+	background-color: var(--color-primary);
+}
+/* Barra */
+.barra {
+	/*background-image: url(../imagenes/barra/b_barra.png);*/
+	background-image: linear-gradient(rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%),
+		url(../imagenes/barra/b_barra.png);
+}
+.txtBanner {
+	top: 105px;
+	left: 100px;
+	font-size: 11.8em;
+	letter-spacing: 4px;
+	text-shadow: 0px 0px 25px rgba(255, 255, 255, 0.5), 0px 0px 20px rgba(255, 255, 255, 0.5);
+}
+.txtLinea2 {
+	width: 100%;
+	text-align: left;
+	line-height: 40px;
+	font-family: roboto;
+	font-size: 1em;
+	font-weight: regular;
+	letter-spacing: 4px;
+	padding: 10px;
+	/*background-color: red;*/
+}
+/* pintxos*/
+#bg-pintxos1.lazy {
+	background-image: none;
+	background-color: #f1f1fa;
+}
+#bg-pintxos1 {
+	background-image: url(../imagenes/barra/pintxos1.png);
+}
+#bg-pintxos2.lazy {
+	background-image: none;
+	background-color: #f1f1fa;
+}
+#bg-pintxos2 {
+	background-image: url(../imagenes/barra/pintxos2.png);
+}
+/* marisco*/
+#bg-marisco1.lazy {
+	background-image: none;
+	background-color: #f1f1fa;
+}
+#bg-marisco1 {
+	background-image: url(../imagenes/barra/marisco1.png);
+}
+#bg-marisco2.lazy {
+	background-image: none;
+	background-color: #f1f1fa;
+}
+#bg-marisco2 {
+	background-image: url(../imagenes/barra/marisco2.png);
+}
+/* raciones*/
+#bg-raciones1.lazy {
+	background-image: none;
+	background-color: #f1f1fa;
+}
+#bg-raciones1 {
+	background-image: url(../imagenes/barra/raciones1.png);
+}
+#bg-raciones2.lazy {
+	background-image: none;
+	background-color: #f1f1fa;
+}
+#bg-raciones2 {
+	background-image: url(../imagenes/barra/raciones2.png);
+}
+/* pintxos  mare-mare*/
+#bg-pintxosmare1.lazy {
+	background-image: none;
+	background-color: #f1f1fa;
+}
+#bg-pintxosmare1 {
+	background-image: url(../imagenes/barra/pintxosmare1.png);
+}
+#bg-pintxosmare2.lazy {
+	background-image: none;
+	background-color: #f1f1fa;
+}
+#bg-pintxosmare2 {
+	background-image: url(../imagenes/barra/pintxosmare2.png);
+}
+/* Bodega */
+
+.bodega {
+	background-image: url(../imagenes/bodega/b_bodega.png);
+	/*background: linear-gradient(rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.3) 100%),
+		url(../imagenes/bodega/banner_bodega.png);*/
+}
+.cw-20 {
+	width: 20%;
+}
+.bg-com-bodega {
+	cursor: pointer;
+	width: 20%;
+	height: 560px;
+	margin-left: 0%;
+	background-repeat: no-repeat;
+	background-size: auto;
+}
+/* tintos*/
+#bg-tintos1.lazy {
+	background-image: none;
+	background-color: #f1f1fa;
+}
+#bg-tintos1 {
+	background-image: url(../imagenes/bodega/tintos1.png);
+}
+#bg-tintos2.lazy {
+	background-image: none;
+	background-color: #f1f1fa;
+}
+#bg-tintos2 {
+	background-image: url(../imagenes/bodega/tintos2.png);
+}
+/* blancos*/
+#bg-blancos1.lazy {
+	background-image: none;
+	background-color: #f1f1fa;
+}
+#bg-blancos1 {
+	background-image: url(../imagenes/bodega/blancos1.png);
+}
+#bg-blancos2.lazy {
+	background-image: none;
+	background-color: #f1f1fa;
+}
+#bg-blancos2 {
+	background-image: url(../imagenes/bodega/blancos2.png);
+}
+/* txakoli*/
+#bg-txacoli1.lazy {
+	background-image: none;
+	background-color: #f1f1fa;
+}
+#bg-txacoli1 {
+	background-image: url(../imagenes/bodega/txakoli1.png);
+}
+#bg-txacoli2.lazy {
+	background-image: none;
+	background-color: #f1f1fa;
+}
+#bg-txacoli2 {
+	background-image: url(../imagenes/bodega/txakoli2.png);
+}
+/* cava*/
+#bg-cava1.lazy {
+	background-image: none;
+	background-color: #f1f1fa;
+}
+#bg-cava1 {
+	background-image: url(../imagenes/bodega/cava1.png);
+}
+#bg-cava2.lazy {
+	background-image: none;
+	background-color: #f1f1fa;
+}
+#bg-cava2 {
+	background-image: url(../imagenes/bodega/cava2.png);
+}
+/* champagne*/
+#bg-champagne1.lazy {
+	background-image: none;
+	background-color: #f1f1fa;
+}
+#bg-champagne1 {
+	background-image: url(../imagenes/bodega/champagne1.png);
+}
+#bg-champagne2.lazy {
+	background-image: none;
+	background-color: #f1f1fa;
+}
+#bg-champagne2 {
+	background-image: url(../imagenes/bodega/champagne2.png);
+}
+/* Eventos */
+.eventos {
+	background-image: url(../imagenes/eventos/b_eventos.png);
+	/*background: linear-gradient(rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.3) 100%),
+		url(../imagenes/eventos/banner_eventos.png);*/
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+/* Bodas */
+#bg-bodas.lazy {
+	background-image: none;
+	background-color: #f1f1fa;
+}
+#bg-bodas {
+	background-image: url(../imagenes/eventos/bodas.png);
+}
+#bg-bodas:hover {
+	background-image: url(../imagenes/eventos/bodas_bn.png);
+}
+/* Comuniones*/
+#bg-comuniones.lazy {
+	background-image: none;
+	background-color: #f1f1fa;
+}
+#bg-comuniones {
+	background-image: url(../imagenes/eventos/comuniones.png);
+}
+#bg-comuniones:hover {
+	background-image: url(../imagenes/eventos/comuniones_bn.png);
+}
+/* Empresas */
+#bg-empresas.lazy {
+	background-image: none;
+	background-color: #f1f1fa;
+}
+#bg-empresas {
+	background-image: url(../imagenes/eventos/empresas.png);
+}
+#bg-empresas:hover {
+	background-image: url(../imagenes/eventos/empresas_bn.png);
+}
+#bg-empresas.lazy {
+	background-image: none;
+	background-color: #f1f1fa;
+}
+/* Grupos*/
+#bg-grupos {
+	background-image: url(../imagenes/eventos/grupos.png);
+}
+#bg-grupos:hover {
+	background-image: url(../imagenes/eventos/grupos_bn.png);
+}
+
+/* Reservas */
+.reservas {
+	background-image: url(../imagenes/reservas/banner_reservas.png);
+}
+.txtbanReservas1 {
+	top: 50px;
+	left: 20px;
+	font-size: 10.6em;
+	letter-spacing: 4px;
+}
+.txtbanReservas2 {
+	top: 400px;
+	left: 60px;
+	font-size: 1.8em;
+	letter-spacing: 2px;
+}
+.titularCard {
+	color: black;
+	top: 52px;
+	left: 0px;
+	width: 100%;
+	font-family: roboto;
+	font-size: 2.5em;
+	font-weight: bold;
+	letter-spacing: 4px;
+}
+.bodyCard {
+	top: 160px;
+	left: 0px;
+}
+.pieCard {
+	width: 100%;
+	bottom: 10px;
+	left: 0px;
+}
+.bg-com-reserva {
+	cursor: pointer;
+	width: 40%;
+	height: 640px;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+#bg-reservas.lazy {
+	background-image: none;
+	background-color: #f1f1fa;
+}
+#bg-reservas {
+	background-image: url(../imagenes/reservas/merluza.png);
+}
+#bg-reservas2.lazy {
+	background-image: none;
+	background-color: #f1f1fa;
+}
+#bg-reservas2 {
+	background-image: url(../imagenes/reservas/copa.png);
+}
+pre {
+	padding: 20px;
+	font-family: roboto;
+	font-weight: bold;
+	font-size: 1em;
+	color: rgba(75, 74, 73, 0.8);
+}
+pre h2 {
+	color: rgba(0, 0, 0, 1);
+	font-weight: 900;
+	margin-top: 30px;
+}
+pre h3 {
+	color: rgba(0, 0, 0, 8);
+	font-weight: 500;
+}
+pre h4 {
+	color: rgba(0, 0, 0, 1);
+	font-size: 1.2em;
+	font-weight: 900;
+}
+.centrado {
+	text-align: center;
+}
+.txtCardRerservas {
+	padding: 20px 0px;
+	text-align: left;
+	width: 100%;
+	height: 100%;
+	/*background-color: red;*/
+}
+.txtGen {
+	color: rgba(75, 74, 73, 0.8);
+	font-family: roboto;
+	font-size: 1em;
+	font-weight: 500;
+}
+.imgTfno {
+	position: absolute;
+	left: 20px;
+	top: 10px;
+}
+.txtTfno {
+	position: absolute;
+	left: 380px;
+	top: 30px;
+}
+.imgHorario {
+	position: absolute;
+	left: 20px;
+	top: 150px;
+}
+.txtHorario {
+	position: absolute;
+	left: 380px;
+	top: 175px;
+}
+.imgHorarioApertura {
+	position: absolute;
+	left: 20px;
+	top: 220px;
+}
+.txtHorarioApertura {
+	position: absolute;
+	left: 380px;
+	top: 245px;
+}
+.imgHorarioAnual {
+	position: absolute;
+	left: 20px;
+	top: 290px;
+}
+.txtHorarioAnual {
+	position: absolute;
+	left: 380px;
+	top: 315px;
+}
+.imgComedores {
+	position: absolute;
+	left: 20px;
+	top: 510px;
+}
+.txtComedores {
+	position: absolute;
+	left: 380px;
+	top: 530px;
+}
+.negro {
+	color: rgba(0, 0, 0, 1);
+	font-weight: 900;
+}
+.negro1 {
+	color: var(--color-secondary-light) !important;
+}
+.caja {
+	position: relative;
+	width: 100%;
+}
+.icono {
+	position: absolute;
+	top: 12px;
+	right: 10px;
+}
+/*******************************************************************
+             Descripcion de las animaciones
+			     AnimBajar y AnimSubir
+********************************************************************/
+@keyframes animbajar {
+	from {
+		top: -600px;
+	}
+	to {
+		top: 0px; /*la posicion actual */
+	}
+}
+@keyframes animbajarTexto {
+	from {
+		top: -600px;
+	}
+	to {
+		top: 280px; /*la posicion actual */
+	}
+}
+@keyframes animsubir {
+	from {
+		top: 600px;
+	}
+	to {
+		top: 15px;
+	}
+}

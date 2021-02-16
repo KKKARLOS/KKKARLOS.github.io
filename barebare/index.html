@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+        rel="stylesheet"
+        href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+        crossorigin="anonymous"
+    />    
+    <!--<link href="https://fonts.googleapis.com/css?family=Montserrat|Oswald|Roboto&display=swap" rel="stylesheet">-->
+    <link rel="stylesheet" href="estilos/fonts.css">
+    <link rel="stylesheet" href="estilos/estilos.css">
+	<link rel="stylesheet" href="estilos/animations.css" />    
+   <title>Document</title>
+</head>
+<body>
+    <header class="w100 flexRow">
+    <!-- Logo-->
+    <a href="index.html"><img src="imagenes/barebare/logo.png"  alt="logo"> </a>   
+     <!-- Menu-->
+        <nav> 
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li ><a href="restaurante.html">Restaurante</a></li>
+                <li><a href="barra.html">Barra</a></li>
+                <li><a href="bodega.html">Bodega</a></li>
+                <li><a href="eventos.html"> Eventos</a></li>
+                <li><a href="reservas.html">Reservas</a></li>
+            </ul>        
+       </nav>       
+        <!-- Redes Sociales-->
+       <div class="redes-sociales">
+            <i class="fab fa-facebook-f fa-1x"></i>&nbsp;
+            <i class="fab fa-instagram fa-1x"></i>&nbsp;
+            <i class="fab fa-twitter fa-1x"></i>&nbsp;
+           <i class="far fa-comments fa-1x"></i>&nbsp;
+       </div>
+    </header>
+    <!-- Banner principal de la página-->
+    <div class="container-fluid slider">
+        <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+                <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="imagenes/barebare/inicio.png" class="d-block w-100" alt="..." />
+                    <div class="carousel-caption d-none d-md-block">
+                        <span class="bannerSlide">BARE - BARE</span>
+                        <div class="txtcontacto">
+                            <p>
+                                <i class="fas fa-map-marker-alt fa-1x"></i>&nbsp;&nbsp;&nbsp;&nbsp;Portu Kalea, 7, 20003 Donostia, Gipuzkoa
+                                </p>
+                                <p>
+                                <i class="fas fa-mobile-alt fa-1x"></i>&nbsp;&nbsp;&nbsp;&nbsp;+34 943 42 07 03
+                                </p>
+                                <p>
+                               <i class="fab fa-whatsapp fa-1x"></i>&nbsp;&nbsp;&nbsp;+34 699 354 930
+                                </p>
+                                <p>
+                              <i class="fas fa-envelope fa-1x"></i>&nbsp;&nbsp;&nbsp;info@barebare.com
+                                </p>
+                        </div>                       
+                    </div>
+                </div>                        
+                <div class="carousel-item" onclick="location.href='bodega.html'">
+                    <img src="imagenes/barebare/banner_bodega.png" class="d-block w-100" alt="..." />
+                    <div class="carousel-caption d-none d-md-block">
+                        <span class="bannerSlide">Bodega</span>
+                        <div class="caja"><br><br><br></div>
+                    </div>
+                </div>
+                <div class="carousel-item" onclick="location.href='reservas.html'">
+                    <!-- <img src="imagenes/reservas/banner_reservas.png" class="d-block w-100" alt="..." /> -->
+                    <video class="bg-video" autoplay muted loop>
+                            <source  src="imagenes/barebare/video_carne.mp4"  type="video/mp4" >    
+                    </video>
+                    <div class="carousel-caption d-none d-md-block">
+                        <span class="bannerSlide">Reservas</span>
+                        <div class="caja"><br><br></div>
+                    </div>
+                </div>
+            </div>-
+            <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>    
+    
+        <!--  3 Imag div platos-->
+
+     <!-- Contenido  
+    <section class="w87-5 ">--> 
+    <div class="container">        
+        <!-- Texto al pie del banner-->
+        <p  class="mtb50"  >
+            Si quieres que tu experiencia gastronómica sea completa descubre nuestro restaurante Bare Bare. Partiendo de la cocina tradicional vasca y aplicando a la mejor materia prima nuestro cariño y conocimiento te haremos disfrutar de una experiencia única.       
+        </p>     
+            <!-- Cabecera de Servicios-->
+        <div class="flexRow mtb50">
+            <div class="raya">
+                <hr>
+            </div>
+            <h1>SERVICIOS</h1>
+            <div class="raya">
+                <hr>
+            </div>    
+        </div>    
+        <!--  3 Imag div platos-->
+        <article class="s-3-images flexRow">
+            <div class="cw-30">
+                <img src="imagenes/barebare/imagen1.png" title="" class="foto" />
+                <h2>CARNE</h2>
+            </div>
+            <div class="cw-30">
+                <img src="imagenes/barebare/imagen2.png" title="" class="foto" />
+                <h2>PESCADO</h2>
+            </div>
+            <div class="cw-30">
+                <img src="imagenes/barebare/imagen3.png" title="" class="foto" />
+                <h2>POSTRE</h2>
+            </div>
+        </article>
+
+        <!-- Restaurante-->    
+        <article class="mt90 flexRow">
+            <div class="c-50 fondoCard">
+                <div class="txtCard titularCard">
+                    Restaurante
+                </div>
+                <div class="txtCard bodyCard">
+                    La cocina del Bare Bare es un viaje en el tiempo, desde el ayer hacia el mañana, desde el amor por las tradiciones, la artesanía y lo contemporáneo, hacia un lugar llamado simplemente placer. Placer identitario.
+                </div>    
+                <div class="txtCard flexRow noWrap pieCard">
+                    <div class="w50">
+                       <hr>
+                    </div>
+                    <div class="boton">
+                       <button class="button" onclick="location.href='restaurante.html'"><span>IR RESTAURANTE</span></button> 
+                    </div>                
+                </div>    
+            </div>       
+            <div id="bg-comedor" class="lazy bg-comun" onclick="location.href='restaurante.html'">        
+            </div>                 
+        </article>
+
+        <!-- Pintxos-->  
+        <article class="flexRow">
+            <div id="bg-varios"  class="lazy bg-comun" onclick="location.href='barra.html'">        
+            </div>              
+            <div class="c-50 fondoCard">
+                <div class="txtCard titularCard">
+                    Barra y Raciones
+                </div>
+                <div class="txtCard bodyCard">
+                    Verdadera cocina en miniatura para los más exigentes. Una manera divertida, informal y sugerente para disfrutar los sabores y las delicias de temporada sin olvidarse de nuestros clásicos.
+                </div>    
+                <div class="txtCard flexRow noWrap  pieCard">
+                    <div class="w50">
+                        <hr>
+                    </div>
+                    <div class="boton">
+                        <button class="button" onclick="location.href='barra.html'"><span>IR BARRA</span></button> 
+                    </div>                
+                </div>    
+            </div> 
+        </article>
+        
+        <!-- Bodega-->    
+        <article class="flexRow">
+            <div class="c-50 fondoCard">
+                <div class="txtCard titularCard">
+                    Bodega
+                </div>
+                <div class="txtCard bodyCard">
+                    El maridaje es fundamental para potenciar los sentidos y disfrutar de la mejor gastronomía. Hemos elaborado una cuidada carta con más de 100 caldos escogidos entre las diferentes Denominaciones de Origen.
+                </div>    
+                <div class="txtCard flexRow noWrap pieCard">
+                    <div class="w50">
+                        <hr>
+                    </div>
+                    <div class="boton">
+                        <button class="button" onclick="location.href='bodega.html'"><span>IR BODEGA</span></button> 
+                    </div>                
+                </div>    
+            </div>
+            <div  id="bg-bodega"  class="lazy bg-comun" onclick="location.href='bodega.html'">        
+            </div>    
+        </article>    
+         
+          <!-- Eventos-->       
+        <article class="flexRow"> 
+            <div id="bg-eventos" class="lazy bg-comun" onclick="location.href='eventos.html'">        
+            </div>   
+            <div class="c-50 fondoCard">
+                <div class="txtCard titularCard">
+                    Eventos
+                </div>
+                <div class="txtCard bodyCard">
+                Fusionando lo mejor de nuestra cocina con unos espacios de lujo para que tu celebración sea única. Si quieres celebrar tu boda, fiesta, evento de empresa hazlo con nosotros.
+                </div>    
+                <div class="txtCard flexRow noWrap  pieCard">
+                    <div class="w50">
+                    <hr>
+                    </div>
+                    <div class="boton">
+                    <button class="button" onclick="location.href='eventos.html'"><span >IR EVENTOS</span></button> 
+                    </div>                
+                </div>    
+            </div>           
+        </article>  
+
+        <!-- Reservas-->    
+        <article class="flexRow"> 
+            <article class="c-50 fondoCard">
+                <div class="txtCard titularCard">
+                    Reservas
+                </div>
+                <div class="txtCard bodyCard">
+                    Para realizar una reserva puedes llamarnos al teléfono 943 420 703. También se puede realizar la reserva por whatsapp en el numero 699 354 930, a través del correo electrónico reservas@barebare.com o rellenando el formulario de reserva.
+                </div>    
+                <div class="txtCard flexRow noWrap pieCard">
+                    <div class="w50">
+                        <hr>
+                    </div>
+                    <div class="boton">
+                        <button class="button" onclick="location.href='reservas.html'"><span>IR RESERVAS</span></button> 
+                    </div>                
+                </div>    
+            </article>
+            <article id="bg-fachadabar" class="lazy bg-comun" onclick="location.href='reservas.html'">        
+            </article>   
+        </article>       
+    <!-- </section>-->   
+    </div>
+    <!-- Pie de página-->   
+    <footer class="mt90 w100 flexRow  sa_flex">
+            <article>
+                <a href="index.html"><img src="imagenes/barebare/logo_footer.png"  alt="logo"> </a>  
+            </article>
+            <article class="col-texto">
+                <ul>
+                    <li><a href="index.html">Inicio</li>
+                    <li><a href="restaurante.html">Restaurante</a>
+                    <li><a href="barra.html">Barra</a></li>
+                </ul>
+            </article>
+            <article class="col-texto">
+                <ul>
+                    <li><a href="bodega.html">Bodega</a></li>
+                    <li><a href="eventos.html"> Eventos</a></li>
+                    <li><a href="reservas.html">Reservas</a></li>
+                </ul>                       
+            </article>
+            <article class="col-texto">
+                <ul>
+                    <li><a href="avisolegal.html">Aviso legal</a></li>
+                    <li><a href="politicaCookies.html">Pol. cookies y Privacidad</a></li>
+                    <li><a href="avisolegal.html">© Bare-Bare 2018</a></li>
+                </ul>
+            </article>          
+            <article class="col-texto p-25">
+                <ul>
+                    <li>Siguenos en Facebook</li>
+                    <li>Portu Kalea, 7</li>
+                    <li>20003 Donostia, Gipuzkoa </li>
+                </ul>
+            </article>          
+            <article class="col-texto p-50">
+                <ul>
+                    <li>Horario 10:30 - 24:00H</li>
+                    <li>Jueves cerrado</li>
+                    <li>+34 943 420 703 </li>
+                </ul>
+            </article>                                                
+    </footer>
+    <script src="https://kit.fontawesome.com/3b6ee8ccaf.js" crossorigin="anonymous"></script>    
+    <script
+        src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"
+    ></script>
+    <script
+        src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"
+    ></script>
+    <script
+        src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"
+    ></script>
+    <!--  Carga de imagenes de background utilizadas en css de forma diferida  -->
+    <script src="js/lazyLoading.js"></script>
+    <script>
+        $(window).scroll(function () {
+            $("#bg-comedor").each(function () {
+                var imagePos = $(this).offset().top;
+
+                var topOfWindow = $(window).scrollTop();
+                //alert("hola1: " + topOfWindow);
+                if (imagePos < topOfWindow + 300) {
+                    $(this).addClass("slideLeft");
+                }
+            });
+        });
+
+        $(window).scroll(function () {
+            $("#bg-varios").each(function () {
+                var imagePos = $(this).offset().top;
+
+                var topOfWindow = $(window).scrollTop();
+                //alert("hola2: " + topOfWindow);
+                if (imagePos < topOfWindow + 300) {
+                    $(this).addClass("slideRight");
+                }
+            });
+        });
+
+        $(window).scroll(function () {
+            $("#bg-bodega").each(function () {
+                var imagePos = $(this).offset().top;
+
+                var topOfWindow = $(window).scrollTop();
+                //alert("hola3: " + topOfWindow);
+                if (imagePos < topOfWindow + 400) {
+                    $(this).addClass("slideLeft");
+                }
+            });
+        });
+        $(window).scroll(function () {
+            $("#bg-eventos").each(function () {
+                var imagePos = $(this).offset().top;
+
+                var topOfWindow = $(window).scrollTop();
+                //alert("hola3: " + topOfWindow);
+                if (imagePos < topOfWindow + 400) {
+                    $(this).addClass("slideRight");
+                }
+            });
+        });      
+        $(window).scroll(function () {
+            $("#bg-fachadabar").each(function () {
+                var imagePos = $(this).offset().top;
+
+                var topOfWindow = $(window).scrollTop();
+                //alert("hola3: " + topOfWindow);
+                if (imagePos < topOfWindow + 400) {
+                    $(this).addClass("slideLeft");
+                }
+            });
+        });             
+    </script>
+</body>
+</html>

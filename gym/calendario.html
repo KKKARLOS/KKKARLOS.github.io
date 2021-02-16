@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&family=Teko:wght@300;400;500;600;700&family=Roboto:ital,wght@0,500;0,700;0,900;1,500;1,700;1,900&display=swap"
+			rel="stylesheet"
+		/>
+		<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="dist/css/bootstrap.css" />
+		<link rel="stylesheet" href="estilos/estilos.css" />
+		<script src="https://kit.fontawesome.com/3b6ee8ccaf.js" crossorigin="anonymous"></script>
+		<link rel="stylesheet" href="dist/css/bootstrap.css" />
+
+		<title>Hello, world!</title>
+		<style>
+			/*h1 {
+				font-family: "Teko", sans-serif;
+				font-weight: 900;
+			}*/
+		</style>
+	</head>
+	<body>
+		<header id="inicio" class="banner-calendario  banner-bg">
+			<div class="container-fluid">
+				<nav class="navbar fixed-top container-fluid navbar-expand-lg navbar-dark bg-dark">
+					<div class="w-50 logo text-left"><a style="cursor:pointer;	text-decoration: none; color: white" href="index.html">EGIA-<span id="logo-banner">GYM</span></a></div>
+					<button
+						class="navbar-toggler"
+						type="button"
+						data-toggle="collapse"
+						data-target="#navbarSupportedContent"
+						aria-controls="navbarSupportedContent"
+						aria-expanded="false"
+						aria-label="Toggle navigation"
+					>
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<div class="w-50 collapse navbar-collapse" id="navbarSupportedContent">
+						<ul class="navbar-nav m-auto">
+							<li class="nav-item active">
+								<a class="nav-link" href="index.html">Inicio<span class="sr-only">(current)</span></a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="nosotros.html">Nosotros</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="servicios.html">Servicios</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">Calendario</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="blog.html">Blog</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="contacto.html">Contacto</a>
+							</li>
+						</ul>
+					</div>
+				</nav>
+				<div class="container-fluid">
+					<div class="row bannerTexto2  justify-content-center">
+						<div class="col-sm-12 col-md-6">
+							<div class="text-banner1">
+								CALENDARIO
+							</div>
+							<h4 class="mt-5 blanco2">Consulta la programación de la semana.</h4>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<section class="container-fluid">
+			<div class="p-texto">
+				<p>
+					En la tabla de abajo te ponemos la programación de la semana y la columna resaltada en naranja es el día actual. También tienes más abajo la posibilidad de realizarte un IMC.  Podrás calcular tu índice de masa corporal indicando sólo dos datos, tu estatura y tu peso.	</p>
+			</div>			
+			<div class="row cabeceras mt-150 align-items-center justify-content-center text-center">
+				<div class="col-sm-12 mt-4">
+					<h1 class="mt-3 mb-5"><span class="raya"><hr /></span><span class="naranja_strong"> CALENDARIO</span> SEMANAL</h1>
+				</div>
+			</div>
+			<div class="row  mt-150">
+				<div class="col-12 col-sm-12 col-md-6">
+					<div class="row cab-calendario">
+						<div class="col-3 col-offset-md-4 col-sm-2 cab">Hora</div>
+						<div class="col-3 col-sm-2 cab">Lunes</div>
+						<div class="col-3 col-sm-2 cab">Martes</div>
+						<div class="col-3 col-sm-2 cab">Miércoles</div>
+					</div>
+					<div class="row cab-calendario">
+						<div class="col-3 col-offset-md-4 col-sm-2 det">8 - 11 h</div>
+						<div class="col-3 col-sm-2 det">Bodybuilder<br/>Javier Pérez</div>
+						<div class="col-3 col-sm-2 det">Yoga<br/>Ana Ruiz</div>
+						<div class="col-3 col-sm-2  det bg-naranja">Aeróbic<br/>Asier Zubia</div>
+					</div>
+					<div class="row cab-calendario">
+						<div class="col-3 col-offset-md-4 col-sm-2 det">11 - 14 h</div>
+						<div class="col-3 col-sm-2 det">Bodybuilder<br/>Javier Pérez</div>
+						<div class="col-3 col-sm-2 det">Yoga<br/>Ana Ruiz</div>
+						<div class="col-3 col-sm-2  det bg-naranja">Aeróbic<br/>Asier Zubia</div>
+					</div>
+					<div class="row cab-calendario">
+						<div class="col-3 col-offset-md-4 col-sm-2 det">14 - 17 h</div>
+						<div class="col-3 col-sm-2 det">Bodybuilder<br/>Javier Pérez</div>
+						<div class="col-3 col-sm-2 det">Yoga<br/>Ana Ruiz</div>
+						<div class="col-3 col-sm-2  det bg-naranja">Aeróbic<br/>Asier Zubia</div>
+					</div>
+					<div class="row cab-calendario">
+						<div class="col-3 col-offset-md-4 col-sm-2 det">17 - 21 h</div>
+						<div class="col-3 col-sm-2 det">Bodybuilder<br/>Javier Pérez</div>
+						<div class="col-3 col-sm-2 det">Yoga<br/>Ana Ruiz</div>
+						<div class="col-3 col-sm-2  det bg-naranja">Aeróbic<br/>Asier Zubia</div>
+					</div>
+					<div class="row cab-calendario">
+						<div class="col-3 col-offset-md-4 col-sm-2 det">21 - 23 h</div>
+						<div class="col-3 col-sm-2 det">Bodybuilder<br/>Javier Pérez</div>
+						<div class="col-3 col-sm-2 det">Yoga<br/>Ana Ruiz</div>
+						<div class="col-3 col-sm-2  det bg-naranja">Aeróbic<br/>Asier Zubia</div>
+					</div>																								
+				</div>
+				<div class="col-12 col-sm-12 col-md-6">
+					<div class="row cab-calendario2">
+						<div class="col-3 col-sm-2 d-md-none cab">Hora</div>
+						<div class="col-3 col-sm-2 cab">Jueves</div>
+						<div class="col-3 col-sm-2 cab">Viernes</div>
+						<div class="col-3 col-sm-2 cab">Sábado</div>
+						<div class="col-md-2 cab-dom ">Domingo</div>	
+					</div>	
+					<div class="row cab-calendario2">
+						<div class="col-3 col-sm-2 d-md-none det">8 - 11 h</div>
+						<div class="col-3 col-sm-2 det">Spinning<br/>Ane Zubeldia</div>
+						<div class="col-3 col-sm-2 det">Fitness<br/>Julia Otxoa</div>
+						<div class="col-3 col-sm-2 det">Pilates<br/>Nerea Izagirre</div>
+						<div class="col-md-2 det-dom ">Cerrado</div>	
+					</div>
+					<div class="row cab-calendario2">
+						<div class="col-3 col-sm-2 d-md-none det">11 - 14 h</div>
+						<div class="col-3 col-sm-2 det">Spinning<br/>Ane Zubeldia</div>
+						<div class="col-3 col-sm-2 det">Fitness<br/>Julia Otxoa</div>
+						<div class="col-3 col-sm-2 det">Pilates<br/>Nerea Izagirre</div>
+						<div class="col-md-2 det-dom ">Cerrado</div>	
+					</div>
+					<div class="row cab-calendario2">
+						<div class="col-3 col-sm-2 d-md-none det">14 - 17 h</div>
+						<div class="col-3 col-sm-2 det">Spinning<br/>Ane Zubeldia</div>
+						<div class="col-3 col-sm-2 det">Fitness<br/>Julia Otxoa</div>
+						<div class="col-3 col-sm-2 det">Pilates<br/>Nerea Izagirre</div>
+						<div class="col-md-2 det-dom ">Cerrado</div>	
+					</div>
+					<div class="row cab-calendario2">
+						<div class="col-3 col-sm-2 d-md-none det">17 - 21 h</div>
+						<div class="col-3 col-sm-2 det">Spinning<br/>Ane Zubeldia</div>
+						<div class="col-3 col-sm-2 det">Fitness<br/>Julia Otxoa</div>
+						<div class="col-3 col-sm-2 det">Pilates<br/>Nerea Izagirre</div>
+						<div class="col-md-2 det-dom ">Cerrado</div>	
+					</div>
+					<div class="row cab-calendario2">
+						<div class="col-3 col-sm-2 d-md-none det">21- 23 h</div>
+						<div class="col-3 col-sm-2 det">Spinning<br/>Ane Zubeldia</div>
+						<div class="col-3 col-sm-2 det">Fitness<br/>Julia Otxoa</div>
+						<div class="col-3 col-sm-2 det">Pilates<br/>Nerea Izagirre</div>
+						<div class="col-md-2 det-dom ">Cerrado</div>	
+					</div>																													
+				</div>				
+			</div>
+			<div class="row bg-calltoaction4 mt-200 mb-5">
+				<div class="col-12 col-sm-12 offset-md-1 col-md-7">
+					<h3 class="blanco">CLASES DE PILATES ESTE VERANO. 
+						PAGA AHORA Y CONSIGUE UN 40 POR CIERTO DE DESCUENTO</h3>
+				</div>
+				<div class="col-12 col-sm-12 col-md-4 mb-5"><br/><br/>
+					<button type="button" class="btn btn-danger btn-lg btn-call_to_action2">APUNTATE AHORA</button>
+				</div>
+			</div>	
+			<div class="row cabeceras mt-150 align-items-center justify-content-center text-center">
+				<div class="col-sm-12 mt-4">
+					<h1 class="mt-3 mb-5"><span class="raya"><hr /></span>  CHEQUEA<span class="naranja_strong"> TU CUERPO</span></h1>
+				</div>
+			</div>			
+			<div class="row mt-150 chequeo">
+				<div class="col-12 col-sm-12 col-md-5  text-center tabla-imc">
+					<h2 class="mt-5">CALCULA TU IMC</h2>
+					<h5 class="w-80 m-auto pt-5 negro">El IMC se utiliza para clasificar el estado ponderal de la persona, y se calcula a partir de la fórmula: peso(kg)/talla(m2).</br></br>
+						Se trata de un cálculo común tanto para hombres como para mujeres. Recuerde que este índice nutricional tan solo se aplica en adultos.
+					</h5>
+					<div class="row mt-100 imc">
+						<div class="col-6 col-sm-6 offset-md-1 col-md-4">
+							<input name="altura" type="number" class="form-control bordeBajo" id="altura" placeholder="Altura(metro.cms)" />
+						</div>
+						<div class="col-6 col-sm-6 col-md-4 offset-md-1">
+							<input name="peso" type="number" class="form-control bordeBajo" id="peso" placeholder="Peso" />
+						</div>						
+					</div>
+					<div class="row mt-50">
+						<div class="col-12 mt-1">
+							<h2>IMC</h2>
+							<div id="imc" class="etiqueta black"></div>
+						</div>						
+					</div>													
+				</div>
+				<div class="col-12 col-sm-12 col-md-7 text-center tabla-imc">
+					<div class="row mt-5 w-80">
+						<div class="col-5 col-sm-5 col-md-3 cab bleft"><h3 class="blanco m-1 ">IMC</h3></div>
+						<div class="col-7 col-sm-7 col-md-9 cab bright"><h3 class="blanco m-1">ESTADO DE PESO</h3></div>
+					</div>
+					<div id="fila1" class="row w-80">
+						<div class="col-5 col-sm-5 col-md-3  pt-3 bleft bright" ><h5 class="m-1 negro "> &lt; 18,5</h5></div>
+						<div class="col-7 col-sm-7 col-md-9  pt-3 bright"><h5 class="m-1 negro">Peso insuficiente</h5></div>
+					</div>	
+					<div id="fila2" class="row w-80">
+						<div class="col-5 col-sm-5 col-md-3 bleft bright"><h5 class="m-1 negro "> 18,5 - 24,9</h5></div>
+						<div class="col-7 col-sm-7 col-md-9 bright"><h5 class="m-1 negro">Peso normal</h5></div>
+					</div>	
+					<div id="fila3" class="row w-80">
+						<div class="col-5 col-sm-5 col-md-3 bleft bright"><h5 class="m-1 negro "> 25 - 26,9</h5></div>
+						<div class="col-7 col-sm-7 col-md-9 bright"><h5 class="m-1 negro">Sobrepeso grado1</h5></div>
+					</div>	
+					<div id="fila4" class="row w-80">
+						<div class="col-5 col-sm-5 col-md-3 bleft bright"><h5 class="m-1 negro "> 27 - 29,9</h5></div>
+						<div class="col-7 col-sm-7 col-md-9 bright"><h5 class="m-1 negro">Sobrepeso grado2 (Preobesidad)</h5></div>
+					</div>
+					<div id="fila5" class="row w-80">
+						<div class="col-5 col-sm-5 col-md-3 bleft bright"><h5 class="m-1 negro "> 30 - 34,9</h5></div>
+						<div class="col-7 col-sm-7 col-md-9 bright"><h5 class="m-1 negro">Sobrepeso de tipo 1</h5></div>
+					</div>
+					<div id="fila6" class="row w-80">
+						<div class="col-5 col-sm-5 col-md-3 bleft bright"><h5 class="m-1 negro "> 35 - 39,9</h5></div>
+						<div class="col-7 col-sm-7 col-md-9 bright"><h5 class="m-1 negro">Sobrepeso de tipo 2</h5></div>
+					</div>		
+					<div id="fila7" class="row w-80">
+						<div class="col-5 col-sm-5 col-md-3 bleft bright"><h5 class="m-1 negro "> 40 - 49,9</h5></div>
+						<div class="col-7 col-sm-7 col-md-9 bright"><h5 class="m-1 negro">Obesidad de tipo 1</h5></div>
+					</div>		
+					<div id="fila8" class="row w-80">
+						<div class="col-5 col-sm-5 col-md-3 pb-3 bleft bright bbottom"><h5 class="m-1 negro "> &gt 49,9</h5></div>
+						<div class="col-7 col-sm-7 col-md-9 pb-3  bright bbottom"><h5 class="m-1 negro">Obesidad de tipo 2</h5></div>
+					</div>	
+					<div class="row w-80 mt-150">
+						<div class="col-12">
+							<button id="btn-imc" type="button" class="btn btn-danger btn-lg btn-call_to_action blanco">Calcular</button>
+						</div>						
+					</div>																																																							
+				</div>				
+			</div>			
+			<div class="row mt-5">
+				<div class="col-12 text-center">
+					<img src="img/inicio/arriba.png" alt="" style=
+					"cursor:pointer" onclick="location.href='#inicio'">
+				</div>
+			</div>					
+		</section>
+	
+		<footer class="container-fluid bg-negro mt-100">
+			<div class="row pie ml-3">
+				<div class="col-md-3">
+					<div class="w-50 logo">EGIA-<span id="logo-banner">GYM</span></div>
+					<div class="mt-4 blanco text-left">C/ Mundaiz nº 20,  Egia <br/>
+						20012-Donostia San Sebastián
+					</div>
+					<div class="mt-4 blanco text-left">Teléfono: 667908536<br/>
+						Email: egiagym@gmail.com<br/><br/>
+					</div>	
+				</div>
+				<div class="col-md-3  mb-5">
+					<h3  class="orange_strong">Enlaces de interés</h3>
+					<ul class="margen">
+						<li>
+							<a href="index.html">Inicio</a>
+						</li>						
+						<li>
+							<a href="nosotros.html">Nosotros</a>
+						</li>
+						<li>
+							<a href="servicios.html">Servicios</a>
+						</li>
+						<li>
+							<a href="#inicio">Calendario</a>
+						</li>
+						<li>
+							<a href="blog.html">Blog</a>
+						</li>
+						<li>
+							<a href="contacto.html">Contacto</a>
+						</li>						
+					</ul>
+				</div>
+				<div class="col-md-3  mb-5">
+					<h3  class="orange_strong">Nuestros servicios</h3>
+					<ul class="margen">
+						<li>Guardería</li>
+						<li>Cafetería</li>
+						<li>Spa</li>
+						<li>Gimnasio</li>
+					</ul>						
+				</div>
+				<div class="col-md-3  mb-5">
+					<h3  class="orange_strong">Siguenos en</h3>
+					<div class="mt-2  mb-2 text-left redes">
+						<i class="fab redes fa-twitter-square"></i>
+						<i class="fab redes fa-facebook-square"></i>
+						<i class="fab redes fa-instagram-square"></i>
+						<i class="fab redes fa-skype"></i>
+						<i class="fab redes fa-invision"></i>				
+					</div>	
+					<div class="text-left">
+						Politica de Privacidad<br />
+						Aviso Legal<br />
+						Copyright Egia-Gym 2020<br />	
+					</div>					
+			</div>
+		</footer>		
+		<script>
+			$(document).ready(function () {
+
+				//Calcular Total
+				function colorear(){
+					for (var i=1; i<9; i++) {
+						$("#fila"+i).css({"background-color":"white"});
+					}
+				}
+				$("#btn-imc").click(function () {	 
+					valor = $("#peso").val()/($("#altura").val()*$("#altura").val());	
+					$("#imc").text(valor.toFixed(2));
+					if (valor<18.5){
+						$("#fila1").css({"background-color":"red"});
+					}else if(valor>=18.5&&valor<=24.9){
+						$("#fila2").css({"background-color":"red"});
+					}else if(valor>=25&&valor<=26.9){
+						$("#fila3").css({"background-color":"red"});
+					}else if(valor>=27&&valor<=29.9){
+						$("#fila4").css({"background-color":"red"});
+					}else if(valor>=30&&valor<=34.9){
+						$("#fila5").css({"background-color":"red"});
+					}else if(valor>=35&&valor<=39.9){
+						$("#fila6").css({"background-color":"red"});
+					}else if(valor>=40&&valor<=49.9){
+						$("#fila7").css({"background-color":"red"});
+					}else if(valor>49.9){
+						$("#fila8").css({"background-color":"red"});
+					}
+				});		
+				$("#altura").focus(function () {	 
+					colorear();
+				});				
+				$("#peso").focus(function () {	 
+					colorear();
+				});									
+			});
+		</script>		
+		<!-- Optional JavaScript -->
+		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+		<script
+			src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+			integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+			integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+			integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+			crossorigin="anonymous"
+		></script>
+	</body>
+</html>

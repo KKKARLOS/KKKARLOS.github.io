@@ -1,0 +1,892 @@
+:root {
+	--color-primary: rgba(255, 145, 0, 1);
+	--color-primary-light: rgba(255, 145, 0, 0.28);
+	--color-secondary-light: rgba(255, 255, 255, 0.56);
+
+	--orange: #f0a500;
+	--black: rgba(0, 0, 0, 1);
+	--white: rgba(255, 255, 255, 1);
+}
+/*Reseteo valorres iniciales*/
+* {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+/*anchos*/
+.w5 {
+	width: 5%;
+}
+.w10 {
+	width: 10%;
+}
+.w15 {
+	width: 15%;
+}
+.w25 {
+	width: 25%;
+}
+.w30 {
+	width: 30%;
+}
+.w40 {
+	width: 40%;
+}
+.w35 {
+	width: 35%;
+}
+.w50 {
+	width: 50%;
+}
+.w60 {
+	width: 60%;
+}
+.w70 {
+	width: 70%;
+}
+.w93 {
+	width: 93.23%;
+	margin: auto;
+}
+.w100 {
+	width: 100%;
+}
+/*Margenes*/
+.mb-50 {
+	margin-bottom: 50px !important;
+}
+.mb-100 {
+	margin-bottom: 100px;
+}
+.mb-150 {
+	margin-bottom: 150px;
+}
+.mb-200 {
+	margin-bottom: 200px;
+}
+.pd-50 {
+	padding: 50px 20px;
+}
+.mt-20 {
+	margin-top: 20px;
+}
+.mt-100 {
+	margin-top: 100px;
+}
+.mt-200 {
+	margin-top: 250px;
+}
+/*configuraciones flex*/
+.flex {
+	display: flex;
+	justify-content: center;
+	justify-content: space-around;
+	align-items: center;
+}
+.flexRow {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+}
+.flexColumn {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.flexColumnStart {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: flex-start;
+}
+.flexColumnEnd {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+}
+.flexStartRow {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: start;
+	flex-wrap: wrap;
+}
+.flexAltoCenter {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: flex-start;
+	flex-wrap: wrap;
+}
+.flexEndRow {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+	align-items: center;
+	flex-wrap: wrap;
+}
+.noWrap {
+	flex-wrap: nowrap;
+}
+
+/*Colores*/
+.naranja {
+	color: var(--color-primary);
+}
+/*cabecera*/
+header {
+	position: fixed;
+	top: 0px;
+	z-index: 10;
+	margin: auto;
+	height: 70px;
+	font-family: Roboto;
+	font-size: 1em;
+	font-weight: 400;
+	background-color: var(--black);
+}
+/*Pie*/
+footer {
+	height: 150px;
+	font-family: Roboto;
+	font-size: 18px;
+	line-height: 22px;
+	font-style: regular;
+	background-color: var(--black);
+	color: var(--white);
+}
+/*navegacion*/
+nav {
+	width: 60%;
+	/*background-color: aqua;*/
+}
+nav ul {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+	list-style: none;
+	padding: 0px;
+	margin: 0px;
+	/*background-color: rgb(231, 18, 18);*/
+}
+/* quiere decir que todos los ítems(li) tienen que crecer  en igual proporción, 
+hasta ocupar todo el espacio disponible.  */
+
+nav ul li a {
+	display: block;
+	width: 125px;
+	height: 40px;
+	font-family: Verdana, sans-serif;
+	color: var(--white);
+	text-decoration: none !important;
+	padding: 0.5em 1em;
+	text-align: center;
+	/*añadido*/
+	background-image: linear-gradient(currentColor, currentColor);
+	background-position: 0% 100%;
+	background-repeat: no-repeat;
+	background-size: 0% 5px;
+	transition: background-size 0.3s;
+	font-size: 1em;
+}
+nav ul li a:hover,
+nav ul li a:focus {
+	background-color: var(--black);
+	color: var(--white);
+	/*añadido*/
+	background-size: 100% 2px;
+}
+.visible {
+	display: block;
+}
+.oculto {
+	display: none;
+}
+.idiomas {
+	margin-top: 20px;
+	padding-right: 40px;
+}
+.idiomas a {
+	color: var(--white);
+}
+.im-bg {
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+/* *******************************************************  index .html **************************************************************************************/
+body {
+	font-family: "Century Gothic";
+	font-size: 20px;
+	line-height: 33px;
+	font-weight: 400;
+}
+/* Seccion banner*/
+
+.banner {
+	height: 970px;
+	z-index: -100;
+	color: var(--white);
+	position: relative;
+}
+.bg-inicio {
+	background-image: url(../imagenes/inicio/bg-inicio.png);
+}
+.texto-banner {
+	font-family: "Gochi Hand";
+	font-weight: regular;
+	font-size: 180px;
+	position: absolute;
+	left: 4%;
+	top: 24%;
+}
+.texto-banner-2 {
+	font-family: "Century Gothic";
+	font-weight: regular;
+	font-size: 70px;
+	position: absolute;
+	left: 4%;
+	top: 40%;
+	color: var(--color-primary);
+}
+.texto-banner-3 {
+	font-family: "Gochi Hand";
+	font-weight: regular;
+	font-size: 180px;
+	position: absolute;
+	left: 3%;
+	top: 15%;
+}
+.texto-banner-flex {
+	font-family: "Gochi Hand";
+	font-weight: regular;
+	font-size: 180px;
+	line-height: 190px;
+	left: 4%;
+	top: 15%;
+	text-align: left;
+}
+
+/* Seccion encuentranos*/
+
+.texto-calendario {
+	font-family: "Gochi Hand";
+	font-weight: regular;
+	font-size: 70px;
+	text-align: center;
+	color: var(--color-primary);
+}
+.caja {
+	width: 420px;
+	height: 270px;
+	border: 2px solid var(--black);
+}
+.caja-titulo {
+	font-family: "Century Gothic";
+	font-size: 30px;
+	height: 60px;
+	background-color: var(--black);
+	color: var(--color-primary);
+	text-align: left;
+	padding: 15px;
+	width: 420px;
+}
+.caja-texto {
+	font-size: 13px;
+	line-height: 24px;
+	height: 180px;
+	padding: 15px;
+	width: 420px;
+}
+.azul {
+	background-color: blue;
+}
+/* Seccion Burger del mes*/
+
+.bg-burger-mes {
+	background-image: url(../imagenes/inicio/bg-burger-mes.png);
+	height: 530px;
+	width: 100%;
+}
+.bg-orange {
+	background-color: var(--orange);
+	height: 530px;
+}
+.texto-burger-mes-1 {
+	font-family: "Roboto";
+	font-size: 30px;
+	font-weight: regular;
+	color: var(--white);
+}
+.texto-burger-mes-2 {
+	font-family: "Gochi Hand";
+	font-weight: regular;
+	font-size: 70px;
+	line-height: 90px;
+}
+.texto-burger-mes-3 {
+	padding-top: 25px;
+	font-weight: regular;
+	font-size: 20px;
+	line-height: 30px;
+}
+.texto-burger-mes-4 {
+	padding-top: 50px;
+	font-family: "Gochi Hand";
+	font-weight: regular;
+	font-size: 40px;
+}
+/* Seccion Galeria Gourmet*/
+
+.bg-gourmet {
+	height: 495px;
+	text-align: center;
+}
+.titulo-cabecera {
+	font-family: roboto;
+	font-size: 50px;
+	font-style: regular;
+	padding-top: 150px;
+	text-align: center;
+}
+.texto-body {
+	font-family: "Century Gothic";
+	font-size: 24px;
+	line-height: 30px;
+	font-style: regular;
+	padding-top: 70px;
+	text-align: center;
+}
+.galeria-gourmet {
+	height: 1230px;
+	width: 100%;
+	background-color: var(--color-primary-light);
+	padding: 40px;
+}
+.block-movil {
+	width: 100%;
+}
+.img-redonda {
+	width: 340px;
+	height: 340px;
+	border-radius: 50%;
+	background-image: url(../imagenes/inicio/01-burger.jpg);
+}
+.block-burger {
+	margin: 50px 0px;
+	height: 340px;
+	margin-bottom: 20px;
+}
+.texto-burger-galeria-head {
+	font-family: "Gochi Hand";
+	font-weight: regular;
+	font-size: 40px;
+	line-height: 60px;
+}
+.texto-burger-galeria-body {
+	padding: 25px 60px;
+	font-weight: regular;
+	font-size: 16px;
+	line-height: 22px;
+}
+.texto-burger-galeria-precio {
+	padding-top: 50px;
+	font-family: "Gochi Hand";
+	font-weight: regular;
+	font-size: 35px;
+	color: red;
+}
+/* Sección Reservar foodtruck */
+.reservarTruck,
+.personalizarBurger {
+	width: 100%;
+	height: 150px;
+	text-align: center;
+}
+.bannerFoodTruck {
+	height: 575px;
+	background-image: url(../imagenes/inicio/bg-reservas.png);
+}
+.textoTruck {
+	padding-left: 5%;
+	width: 27%;
+	color: var(--white);
+}
+.btnTruck {
+	width: 335px;
+	height: 86px;
+	background-color: red;
+	color: var(--white);
+	padding: 30px;
+	text-align: center;
+	font-family: roboto;
+	font-size: 35px;
+	font-weight: bold;
+	margin-right: 50px;
+}
+/* Sección personalizar burger*/
+/* Checkbox & Radio button 
+*/
+ul {
+	list-style: none;
+}
+.check input[type="checkbox"],
+.check input[type="radio"] {
+	display: none;
+}
+
+.check label {
+	display: block;
+	cursor: pointer;
+	font-size: 17px;
+}
+
+.check label::before {
+	content: "";
+	display: inline-block;
+	vertical-align: middle;
+	width: 1rem;
+	height: 1rem;
+	border: 2px solid var(--black);
+	background: transparent;
+	margin-right: 1rem;
+	margin-bottom: 0.25rem;
+}
+
+.check input[type="radio"] + label::before {
+	border-radius: 50%;
+}
+
+.check input:checked + label::before {
+	box-shadow: inset 0 0 0 2px var(--orange), inset 0 0 0 0.5rem var(--black);
+}
+
+.bannerPersonalizarBurger {
+	height: 1500px;
+	background-image: url(../imagenes/inicio/bg-personalizarBurger.png);
+}
+.personalizar {
+	width: 60%;
+	height: 1500px;
+}
+.texto-head-personalizar {
+	color: var(--white);
+	text-align: center;
+	width: 60%;
+	padding: 20px 0px 95px 0px;
+}
+.precio-head-personalizar {
+	color: var(--white);
+	padding-top: 30px;
+	padding-bottom: 20px;
+	font-family: "Gochi Hand";
+	font-weight: regular;
+	font-size: 80px;
+}
+.pan-carne {
+	width: 75%;
+	padding-top: 30px;
+}
+.head-pan-carne {
+	font-family: "Gochi Hand";
+	font-weight: regular;
+	font-size: 40px;
+	padding: 60px 0px;
+	color: var(--color-primary);
+	text-align: center;
+}
+.body-pan-carne {
+	width: 370px;
+	height: 180px;
+	color: var(--black);
+	background-color: rgba(255, 255, 255, 0.55);
+	padding: 20px 20px 40px 20px;
+	font-size: 18px;
+}
+.body-pan-carne p {
+	width: 100%;
+}
+.bg-ingredientes {
+	width: 835px;
+	height: 240px;
+	background-color: rgba(255, 255, 255, 0.55);
+}
+.ingredientes {
+	width: 278px;
+	height: 240px;
+	padding: 20px 0px 20px 15px;
+	font-size: 18px;
+}
+.total {
+	margin-top: 100px;
+	width: 835px;
+	height: 70px;
+	background-color: var(--color-primary);
+}
+.total-texto {
+	color: var(--black);
+	font-family: "Gochi Hand";
+	font-weight: regular;
+	font-size: 40px;
+	padding-left: 60px;
+}
+.total-importe {
+	color: var(--black);
+	font-family: "Gochi Hand";
+	font-weight: regular;
+	font-size: 40px;
+	padding-left: 60px;
+	background-color: white;
+	height: 70px;
+	width: 210px;
+	padding-top: 20px;
+}
+/* Sección productos frescos */
+.productos-frescos {
+	margin-top: 150px;
+	height: 550px;
+	background-image: url(../imagenes/inicio/bg-productos.png);
+	background-attachment: fixed;
+}
+.productos-texto {
+	font-family: "Century Gothic";
+	font-weight: regular;
+	font-size: 80px;
+	color: var(--white);
+}
+/* Sección llamar */
+.bg-llamar {
+	height: 270px;
+}
+.icon-movil {
+	font-size: 80px !important;
+}
+.txt-llamanos {
+	font-family: "Gochi Hand";
+	font-weight: regular;
+	font-size: 80px;
+	margin-right: 100px;
+}
+.txt-telefono {
+	font-family: "roboto";
+	font-weight: bold;
+	font-size: 50px;
+	margin-left: 100px;
+}
+/* Servicios*/
+.servicios {
+	width: 100%;
+	height: 450px;
+	justify-content: space-around;
+	background-color: rgba(0, 0, 0, 0.15);
+	font-family: roboto;
+	font-size: 50px;
+	font-style: regular;
+}
+.domicilio {
+	width: 30%;
+	text-align: center;
+	height: 450px;
+}
+.recogida {
+	width: 30%;
+	text-align: center;
+	height: 450px;
+}
+.eventos {
+	justify-content: start;
+	width: 30%;
+	text-align: center;
+	height: 450px;
+}
+.txt-eventos {
+	padding-top: 77px;
+}
+#eventos {
+	margin-top: 90px;
+}
+/*Instagram*/
+.bg-instagram {
+	height: 270px;
+}
+.icon-instagram {
+	font-size: 100px !important;
+	color: var(--black);
+}
+.txt-sigue {
+	font-family: "roboto";
+	font-weight: bold;
+	font-size: 50px;
+	letter-spacing: 4px;
+}
+.txt-instagram {
+	font-family: "roboto";
+	font-weight: bold;
+	font-size: 50px;
+	margin-right: 60px;
+	letter-spacing: 4px;
+}
+/*  Sección galeria */
+.fila {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	padding: 0px;
+	overflow: hidden;
+}
+.galeria {
+	margin: auto;
+	height: 480px;
+}
+.columna {
+	height: 480px;
+	flex: 25%;
+	max-width: 25%;
+	padding: 10px;
+	overflow: hidden;
+}
+.columna img {
+	vertical-align: middle;
+}
+.contacto {
+	width: 80%;
+	padding-left: 50px;
+}
+.pie-izda {
+	width: 50%;
+	text-align: left;
+}
+.pie-dcha {
+	width: 50%;
+	text-align: right;
+	padding-right: 30px;
+}
+
+.efectoAumento:hover {
+	animation-name: escalar;
+	animation-duration: 1s;
+	animation-iteration-count: 1;
+	animation-timing-function: linear;
+	animation-fill-mode: forwards;
+}
+@keyframes escalar {
+	from {
+		transform: scale(1);
+	}
+	to {
+		transform: scale(1.25);
+		-webkit-transform: scale(1.25);
+		-moz-transform: scale(1.25);
+		-ms-transform: scale(1.25);
+		-o-transform: scale(1.25);
+	}
+}
+/* *******************************************************  nosotros .html **************************************************************************************/
+.bg-nosotros {
+	background-image: url(../imagenes/nosotros/bg-nosotros.png);
+}
+.bg-cocinero {
+	background-image: url(../imagenes/nosotros/cocinero.jpg);
+}
+.bg-cocinera {
+	background-image: url(../imagenes/nosotros/cocinera.jpg);
+}
+.bg-cocinero,
+.bg-cocinera {
+	height: 750px;
+	width: 100%;
+}
+.equipo-text {
+	width: 100%;
+	height: 750px;
+	font-family: "Century Gothic";
+	font-weight: regular;
+	font-size: 24px;
+	background-color: rgba(255, 145, 0, 0.2);
+	padding: 30px;
+}
+/* *******************************************************  carta .html **************************************************************************************/
+.bg-carta {
+	background-image: url(../imagenes/carta/carta.png);
+}
+.bg-entrantes {
+	background-image: url(../imagenes/carta/entrantes.png);
+	height: 420px;
+}
+.bg-ensaladas {
+	background-image: url(../imagenes/carta/ensaladas.png);
+	height: 420px;
+}
+.bg-hamburguesas {
+	background-image: url(../imagenes/carta/hamburguesas.png);
+	height: 420px;
+}
+.bg-perritos {
+	background-image: url(../imagenes/carta/perritos.png);
+	height: 420px;
+}
+.bg-bebidas {
+	background-image: url(../imagenes/carta/bebidas.png);
+	height: 420px;
+}
+.carta-texto {
+	font-family: "Gochi Hand";
+	font-weight: regular;
+	font-size: 68px;
+	padding: 60px;
+	color: var(--white);
+	background-color: rgba(0, 0, 0, 0.8);
+}
+.carta {
+	padding: 90px 40px;
+	width: 85%;
+	height: 800px;
+	/*background-color: red;*/
+	margin: auto;
+}
+.fila-carta {
+	margin-bottom: 20px;
+	height: 100px;
+}
+.col {
+	height: 100px;
+	text-align: right;
+}
+.col p {
+	padding-top: 20px;
+	font-family: "Century Gothic";
+	font-weight: regular;
+	font-size: 22px;
+}
+.head-fila,
+.precio-fila {
+	font-family: "Roboto";
+	font-weight: bold;
+	font-size: 35px;
+}
+.head-fila {
+	color: var(--color-primary);
+}
+.precio-fila {
+	color: red;
+}
+
+/* *******************************************************  blog .html **************************************************************************************/
+.bg-blog {
+	background-image: url(../imagenes/blog/bg-blog.png);
+}
+.bg-blog1,
+.bg-blog2,
+.bg-blog3 {
+	height: 600px;
+}
+.bg-blog1 {
+	background-image: url(../imagenes/blog/blog1.png);
+}
+.bg-blog2 {
+	background-image: url(../imagenes/blog/blog2.png);
+}
+.bg-blog3 {
+	background-image: url(../imagenes/blog/blog3.png);
+}
+.blog-text {
+	padding: 40px 5%;
+}
+.blog-heading {
+	font-family: "Roboto";
+	font-weight: bold;
+	font-size: 55px;
+}
+.blog-text p {
+	padding-top: 20px;
+	font-family: "Century Gothic";
+	font-weight: regular;
+	font-size: 30px;
+	line-height: 40px;
+}
+.caja-blog {
+	width: 260px;
+	height: 260px;
+	background-color: var(--color-primary);
+	margin-top: -130px;
+	/*z-index: -10;*/
+}
+.fecha-blog {
+	color: var(--white);
+	font-family: "Roboto";
+	font-weight: bold;
+	font-size: 40px;
+	/*z-index: 1000;*/
+}
+/* *******************************************************  contacto .html **************************************************************************************/
+.bg-contacto {
+	background-image: url(../imagenes/contacto/bg-contacto.png);
+}
+.box-container {
+	height: 740px;
+	margin: auto;
+}
+.box-left,
+.box-right {
+	height: 740px;
+	background-color: rgba(255, 145, 0, 0.55);
+	width: 700px;
+}
+.footerHeadingBox,
+.headingBox {
+	font-size: 50px;
+	font-family: "Gochi Hand";
+	font-weight: regular;
+	text-align: center;
+}
+.headingBox {
+	padding-top: 10%;
+}
+.bodyBox1 {
+	padding: 10% 8%;
+}
+
+.bodyBox2 {
+	margin: 15% 16%;
+	padding: 3% 4%;
+	border: 1px solid var(--black);
+	background-color: var(--white);
+}
+
+.footerHeadingBox {
+	margin-top: -2%;
+}
+
+.bg-localizacion {
+	background-image: url(../imagenes/contacto/localizacion.png);
+	height: 700px;
+}
+
+/* pruebas cajas 
+.marco {
+	background-color: olivedrab;
+	height: 794px;
+}
+.caja1,
+.caja2,
+.caja3,
+.caja4 {
+	height: 794px;
+}
+.caja2,
+.caja4 {
+	width: 100px;
+	background-color: red;
+}
+.caja1,
+.caja3 {
+	padding: 50px;
+	width: 600px;
+	background-color: yellowgreen;
+}
+*/

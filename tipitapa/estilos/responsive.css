@@ -1,0 +1,573 @@
+/* ...........................................TABLET............................................................................... */
+@media screen and (max-width: 1024px) {
+	body {
+		line-height: 30px;
+	}
+	.idiomas {
+		display: none;
+	}
+	nav {
+		width: 100%;
+	}
+	nav ul li a {
+		display: block;
+		padding: 15px 15px;
+		font-size: 0.7em;
+	}
+	nav {
+		display: block;
+	}
+}
+/* .................................................................MÓVIL.......................................................... */
+@media screen and (max-width: 640px) {
+	header {
+		top: -3px;
+		height: 60px;
+	}
+	.logo img {
+		width: 85%;
+		vertical-align: middle;
+	}
+	/* Navegación*/
+	/*botón menu hamburguesa*/
+	.btn-burger {
+		display: block; /* mostrar imagen botón  */
+		position: fixed;
+		top: 10px;
+		right: 60px;
+		padding: 5px;
+		z-index: 2500;
+		width: 10%;
+	}
+	.idiomas {
+		display: none;
+	}
+	nav {
+		position: fixed;
+		top: 57px;
+		left: 0px;
+		display: none;
+		width: 100%;
+		float: none;
+		background-color: #85898c;
+		z-index: 3000;
+		/*color: white;*/
+	}
+	nav ul {
+		/* ocultar menu horizontal */
+		display: block;
+		width: 100%;
+		height: auto;
+	}
+
+	nav ul li a {
+		width: 100%;
+		line-height: 10px;
+		padding: 15px 15px;
+		text-align: center; /* centrar los textos */
+		color: rgba(255, 255, 255, 0.5);
+		background-color: #595b5b;
+		border-bottom: solid 1px white;
+	}
+	/* *******************************************************  index .html **************************************************************************************/
+	/*Banner*/
+	.bg-inicio {
+		background-image: url(../imagenes/inicio/bg-inicio-movil.png);
+	}
+	.texto-banner {
+		font-size: 60px;
+		width: 100%;
+		text-align: center;
+		left: 0px;
+		top: 16%;
+	}
+	.texto-banner-2 {
+		font-size: 30px;
+		width: 100%;
+		text-align: center;
+		top: 25%;
+		left: 0px;
+	}
+	/*Calendario*/
+	.texto-calendario {
+		width: 100%;
+		font-size: 35px;
+	}
+	.d-block {
+		display: block;
+		width: 100%;
+	}
+	.encuentranos .w25 {
+		width: 100%;
+	}
+	.encuentranos .w50 {
+		width: 100%;
+	}
+	.encuentranos .pd-50 {
+		padding: 20px 10px;
+	}
+	.caja {
+		width: 322px;
+		height: 220px;
+		margin-top: 15px;
+	}
+	.caja-titulo {
+		width: 320px;
+	}
+	.caja-texto {
+		width: 320px;
+		font-size: 10px;
+	}
+	.pd-50 {
+		padding: 20px;
+	}
+	/*Hamburguesa del mes*/
+	.burger-mes .w50 {
+		width: 100%;
+	}
+	.burger-mes {
+		width: 100%;
+	}
+	.burger-text {
+		width: 100% !important;
+	}
+	.burger-text .w70 {
+		width: 90% !important;
+	}
+	.texto-burger-mes-1 {
+		font-size: 24px;
+	}
+	.texto-burger-mes-2 {
+		font-size: 58px;
+	}
+	.texto-burger-mes-3 {
+		font-size: 16px;
+		line-height: 23px;
+	}
+
+	/*Burgers gourmet*/
+	.w-movil {
+		width: 100%;
+	}
+	.mb-150 {
+		margin-bottom: 0px;
+	}
+	.mb-200 {
+		margin-bottom: 0px;
+	}
+	.titulo-cabecera {
+		font-size: 30px;
+		line-height: 40px;
+		margin: 0px 0px 20px 20px;
+		padding-top: 50px;
+		text-align: center;
+	}
+	.texto-body {
+		font-size: 16px;
+		line-height: 24px;
+		margin-bottom: 0px;
+		padding: 30px 10px 0px 10px;
+	}
+	.galeria-gourmet {
+		height: auto;
+		padding: 10px;
+		margin-top: 40px;
+	}
+	.img-redonda {
+		width: 150px;
+		height: 150px;
+	}
+	.block-burger {
+		margin: 25px 0px;
+		display: block;
+		width: 100%;
+		height: auto;
+	}
+	.block-movil {
+		display: flex;
+		width: 100%;
+		margin-bottom: 20px;
+	}
+	.texto-burger-galeria-head {
+		font-family: "Gochi Hand";
+		font-weight: regular;
+		font-size: 22px;
+		line-height: 26px;
+		width: 100%;
+		padding-left: 10px;
+	}
+	.texto-burger-galeria-body {
+		padding: 10px 5px 10px 10px;
+		font-weight: regular;
+		font-size: 15px;
+		line-height: 20px;
+		width: 100%;
+	}
+	.texto-burger-galeria-precio {
+		padding-top: 0px;
+		font-family: "Gochi Hand";
+		font-weight: regular;
+		font-size: 30px;
+		color: red;
+		text-align: right;
+	}
+	/* Sección Reservar foodtruck */
+	.reservarTruck,
+	.personalizarBurger {
+		height: 190px;
+		text-align: center;
+	}
+	.bannerFoodTruck {
+		display: block;
+		height: 365px;
+		background-image: url(../imagenes/inicio/bg-reservas.png);
+	}
+	.textoTruck {
+		font-size: 16px;
+		line-height: 24px;
+		padding: 40px 20px;
+		width: 100%;
+	}
+	.btnTruck {
+		width: 180px;
+		height: 55px;
+		background-color: red;
+		color: white;
+		padding: 15px;
+		text-align: center;
+		font-family: roboto;
+		font-size: 18px;
+		font-weight: bold;
+		margin-left: 33%;
+	}
+	/* Sección personalizar burger */
+	.bannerPersonalizarBurger {
+		justify-content: center;
+		height: 1980px;
+		background-image: url(../imagenes/inicio/bg-personalizarBurger-movil.png) !important;
+		background-size: cover;
+		background-position: 35%;
+	}
+	.personalizar {
+		width: 100%;
+		margin-right: 20px;
+	}
+	.texto-head-personalizar {
+		font-size: 16px;
+		line-height: 19px;
+		text-align: center;
+		width: 100%;
+		padding: 30px 20px 60px 20px;
+	}
+	.precio-head-personalizar {
+		padding-top: 0px;
+		font-size: 40px;
+	}
+
+	.pan-carne {
+		width: 100%;
+		height: auto;
+		padding: 35px 10px;
+	}
+	.head-pan-carne {
+		font-family: "Gochi Hand";
+		font-weight: regular;
+		font-size: 40px;
+		padding: 40px 0px;
+		color: var(--color-primary);
+		text-align: center;
+	}
+
+	.body-pan-carne {
+		margin-left: 15px;
+		width: 295px;
+		height: auto;
+		color: black;
+		background-color: rgba(255, 255, 255, 0.55);
+		padding: 20px;
+		font-size: 14px;
+		line-height: 25px;
+	}
+	.bg-ingredientes {
+		margin-left: 15px;
+		width: 295px;
+		display: block;
+		height: auto;
+		padding-left: 0px;
+		padding-bottom: 0px;
+	}
+	.ingredientes {
+		width: 100%;
+		height: auto;
+		font-size: 14px;
+	}
+	.total {
+		margin-top: 40px;
+		width: 100%;
+		height: 70px;
+		background-color: var(--color-primary);
+	}
+	.total-texto {
+		width: 60%;
+	}
+	.total-importe {
+		font-size: 30px;
+		padding-left: 35px;
+		background-color: white;
+		/*height: auto;*/
+		width: 40%;
+		padding-top: 20px;
+	}
+	/* Sección productos frescos */
+	.productos-frescos {
+		margin-top: 80px;
+		height: 365px;
+		background-image: url(../imagenes/inicio/bg-productos.png);
+	}
+	.productos-texto {
+		font-family: "Century Gothic";
+		font-weight: regular;
+		font-size: 40px;
+		line-height: 50px;
+		color: white;
+		text-align: center;
+	}
+	/* Sección llamar */
+	.bg-llamar {
+		height: 170px;
+	}
+	.icon-movil {
+		font-size: 40px !important;
+	}
+	.txt-llamanos {
+		font-family: "Gochi Hand";
+		font-weight: regular;
+		font-size: 26px;
+		margin-right: 28px;
+	}
+	.txt-telefono {
+		font-family: "roboto";
+		font-weight: bold;
+		font-size: 16px;
+		margin-left: 28px;
+	}
+	.mb-100 {
+		margin-bottom: 0px;
+	}
+	/* Servicios*/
+	.servicios {
+		height: 260px;
+		justify-content: space-around;
+		font-size: 16px;
+	}
+	.domicilio,
+	.recogida,
+	.eventos {
+		width: 50%;
+		height: auto;
+	}
+
+	.txt-eventos {
+		padding-top: 18px;
+	}
+	#eventos {
+		margin-top: 90px;
+		width: 55%;
+	}
+
+	/*Instagram*/
+	.bg-instagram {
+		height: 170px;
+		width: 100%;
+	}
+	.icon-instagram {
+		font-size: 35px !important;
+	}
+	.txt-sigue {
+		font-size: 18px;
+		letter-spacing: 2px;
+	}
+	.txt-instagram {
+		font-size: 18px;
+		margin-right: 10px;
+		letter-spacing: 2px;
+	}
+
+	/*  Sección galeria */
+	.galeria {
+		width: 100%;
+		height: auto;
+	}
+	.columna {
+		flex: 100%;
+		max-width: 100%;
+	}
+	footer {
+		font-size: 13px;
+		line-height: 18px;
+		font-style: regular;
+		align-content: space-around;
+	}
+	.pie-inicio {
+		margin-top: 1500px;
+	}
+	.pie-izda {
+		flex-direction: column;
+		padding-left: 10px;
+	}
+	.pie-dcha {
+		text-align: center;
+		padding-right: 5px;
+		padding-top: 15px;
+	}
+	.contacto {
+		padding-left: 0px;
+	}
+	#logo-pie {
+		padding-left: 12px;
+		width: 60%;
+	}
+	/* *******************************************************  nosotros.html **************************************************************************************/
+	.texto-banner-flex {
+		font-size: 80px;
+		line-height: 90px;
+		width: 100%;
+		text-align: center;
+		top: 10%;
+		left: 10px;
+	}
+	.equipo {
+		display: block;
+	}
+	.equipo-text {
+		height: auto;
+		font-size: 16px;
+		padding: 30px 20px;
+	}
+	/* *******************************************************  carta.html **************************************************************************************/
+	.bg-carta {
+		background-image: url(../imagenes/carta/carta-movil.png);
+	}
+	.carta {
+		padding: 20px 15px;
+		width: 100%;
+		height: 610px;
+		/*background-color: red;*/
+		margin: auto;
+	}
+	.carta-texto {
+		font-size: 30px;
+		padding: 30px;
+	}
+	.fila-carta {
+		margin-bottom: 20px;
+		height: 95px;
+		/*background-color: blue;*/
+	}
+	.col {
+		height: 95px;
+		text-align: left;
+	}
+	.head-fila,
+	.precio-fila {
+		font-family: "Roboto";
+		font-weight: bold;
+		font-size: 13px;
+	}
+	.head-fila {
+		color: var(--color-primary);
+	}
+	.precio-fila {
+		color: red;
+	}
+	.col p {
+		padding-top: 20px;
+		font-family: "Century Gothic";
+		font-weight: regular;
+		font-size: 10px;
+	}
+	/* *******************************************************  blog .html **************************************************************************************/
+	.bg-blog1,
+	.bg-blog2,
+	.bg-blog3 {
+		height: 600px;
+		width: 100%;
+	}
+	.mt-200 {
+		margin-top: 80px;
+	}
+	.blog-text {
+		padding: 40px 5%;
+		width: 100%;
+	}
+	.blog-heading {
+		font-size: 30px;
+	}
+	.blog-text p {
+		padding-top: 20px;
+		font-size: 18px;
+		line-height: 30px;
+	}
+	.caja-blog {
+		width: 160px;
+		height: 160px;
+		margin-top: -60px;
+	}
+	.fecha-blog {
+		font-size: 30px;
+	}
+	/* *******************************************************  contacto .html **************************************************************************************/
+	.bg-contacto {
+		background-image: url(../imagenes/contacto/bg-contacto-movil.png);
+	}
+	.texto-banner-3 {
+		font-size: 80px;
+		left: 5%;
+		top: 13%;
+	}
+	.formulario input[type="submit"] {
+		width: 90px;
+	}
+	.box-container {
+		height: auto;
+		margin: auto;
+		padding-bottom: 20px;
+	}
+
+	.box-left,
+	.box-right {
+		height: auto;
+		width: 100%;
+	}
+	.footerHeadingBox,
+	.headingBox {
+		font-size: 30px;
+	}
+	.headingBox {
+		padding-top: 15%;
+	}
+	.bodyBox1 {
+		padding: 10% 3% 2% 3%;
+	}
+	.privacidad {
+		font-size: 12px;
+	}
+
+	.bodyBox2 {
+		margin: 15% 3%;
+		padding: 3% 4%;
+		border: 1px solid black;
+		background-color: white;
+		font-size: 12px;
+	}
+
+	.footerHeadingBox {
+		margin-top: -2%;
+	}
+	.bg-localizacion {
+		background-image: url(../imagenes/contacto/localizacion-movil.png);
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+	}
+}

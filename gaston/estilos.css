@@ -1,0 +1,841 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+/*  index .html*/
+body {
+	font-family: sans-serif;
+	font-size: 16px;
+	line-height: 40px;
+	font-weight: 400;
+}
+.flex {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.w33 {
+	width: 33.33333%;
+}
+.w50 {
+	width: 50%;
+}
+.w66 {
+	width: 66.66666%;
+}
+.im-bg {
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+.logo {
+	position: absolute;
+	z-index: 2000;
+	left: -20px;
+	top: 12px;
+	width: 18%;
+	height: 41px;
+	background-image: url(imagenes/logo.png);
+	background-position: center;
+	background-size: cover;
+}
+#menu-movil {
+	height: 50px;
+	margin-top: -10px;
+}
+.redes_sociales {
+	position: absolute;
+	height: 50px;
+	z-index: 2000;
+	right: 5px;
+	top: 5px;
+	width: 15%;
+}
+.oculto {
+	display: none;
+}
+.visible {
+	display: block;
+}
+.menu {
+	position: absolute;
+	height: 50px;
+	top: 600px;
+	left: 0px;
+	width: 100%;
+}
+.arriba {
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	transition: all 2s;
+	background-color: white;
+}
+nav {
+	width: 80%;
+	height: 50px;
+	padding: 10px;
+	color: black;
+	text-align: center;
+	z-index: 2000;
+}
+nav ul {
+	list-style-type: none;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 40px;
+}
+.moverMenuDcha {
+	justify-content: flex-end;
+	width: 85%;
+}
+nav ul li a {
+	display: block;
+	padding: 0px 15px;
+	font-size: 0.9em;
+	color: black;
+	font-family: Roboto;
+	letter-spacing: 2px;
+	text-decoration: none;
+	/*añadido*/
+	background-image: linear-gradient(currentColor, currentColor);
+	background-position: 0% 100%;
+	background-repeat: no-repeat;
+	background-size: 0% 1px;
+	transition: background-size 0.2s;
+}
+nav ul li a:hover,
+nav ul li a:focus {
+	/*background-color: black;
+	color: white;*/
+	/*añadido*/
+	background-size: 100% 1px;
+}
+.banner {
+	position: relative;
+	background-image: url(imagenes/portada/s1.jpg);
+	height: 980px;
+	z-index: -100;
+}
+.marca {
+	position: absolute;
+	left: 90%;
+	bottom: 5%;
+	z-index: 400;
+	width: 90px;
+	height: 90px;
+}
+.flecha {
+	position: absolute;
+	left: 50%;
+	bottom: 5%;
+	z-index: 400;
+	cursor: pointer;
+}
+.logoCentral {
+	width: 80%;
+}
+p {
+	margin-top: 20px;
+	font-size: 1em;
+}
+/*Sección historia */
+.historia {
+	position: relative;
+	width: 100%;
+	height: 980px;
+	background-image: url("imagenes/portada/historia.jpg");
+	background-attachment: fixed;
+	padding: 20% 10%;
+	color: burlywood;
+	text-align: center;
+	line-height: 1.6em;
+}
+.logoHistoria {
+	position: absolute;
+	left: 50%;
+	top: 17%;
+	z-index: 3000;
+	width: 90px;
+	height: 90px;
+}
+/*Sección cocina */
+.cocina {
+	height: 960px;
+	background-color: rgba(51, 206, 211, 0.4);
+}
+.texto-plato {
+	padding-left: 10%;
+	width: 40%;
+}
+.texto-plato a {
+	color: black;
+}
+.texto-plato p {
+	font-size: 1.2em;
+}
+.plato {
+	height: 560px;
+	width: 560px;
+	text-align: right;
+}
+
+/*Sección carta */
+.carta {
+	display: flex;
+	height: 980px;
+}
+.bar {
+	background-image: url("imagenes/portada/bar.jpg");
+}
+.vinos {
+	background-image: url("imagenes/portada/vinos.jpg");
+	padding-top: 38px;
+}
+.txt_bar {
+	width: 50%;
+	margin: auto;
+	text-align: center;
+	color: rgba(255, 255, 255, 1);
+	font-family: regular;
+}
+.txt_bar h1 {
+	font-size: 40px;
+}
+.txt_bar a {
+	color: rgba(255, 255, 255, 1);
+}
+.txt_bar p {
+	font-size: 1.2em;
+}
+.equipo {
+	background-image: url("imagenes/portada/equipo.jpg");
+	background-attachment: fixed;
+	height: 980px;
+}
+/*Sección equipo */
+.txt_equipo {
+	width: 80%;
+	margin: auto;
+	text-align: left;
+	color: rgba(255, 255, 255, 0.7);
+	font-family: regular;
+	font-weight: 300;
+}
+.txt_equipo > h1 {
+	font-size: 40px;
+}
+.txt_equipo > a {
+	color: rgba(255, 255, 255, 0.7);
+	font-size: 1.2em;
+}
+.txt_equipo > p {
+	font-size: 1.2em;
+	width: 42%;
+}
+/*Sección reservas */
+.reservas {
+	background-image: url("imagenes/portada/reservas.jpg");
+	background-attachment: fixed;
+	height: 980px;
+}
+
+.txt_reservas {
+	margin: auto;
+	text-align: center;
+	color: rgba(255, 255, 2550, 1);
+	font-family: regular;
+	font-weight: 300;
+	margin: auto;
+}
+.txt_reservas > h1 {
+	font-size: 40px;
+}
+.txt_reservas > a {
+	color: rgba(255, 255, 255, 1);
+	font-size: 1.2em;
+}
+.txt_reservas > p {
+	margin-left: 2%;
+	font-size: 1.2em;
+	width: 65%;
+	margin: auto;
+}
+.fab {
+	margin-right: 10px;
+}
+/*Sección contacto */
+.contacto {
+	display: flex;
+	background-color: #604d45;
+	height: 720px;
+	color: white;
+}
+.contacto a {
+	color: white;
+}
+/*Sección mapa */
+.mapa {
+	height: 635px;
+}
+.pie {
+	background-color: #604d45;
+	height: 60px;
+	font-size: 12px;
+	color: white;
+}
+/*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+/* Cocina.html */
+
+/*Banner*/
+.banner-cocina {
+	background-image: linear-gradient(rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0.5) 100%),
+		url(imagenes/cocina/banner-cocina.jpg);
+	height: 585px;
+}
+.texto-banner {
+	font-family: regular;
+	font-size: 70px;
+}
+.mas {
+	font-size: 45px;
+	font-weight: 900;
+	cursor: pointer;
+}
+
+.txt-banner-cocina {
+	width: 70%;
+	height: 515px;
+	margin: auto;
+	text-align: center;
+	font-family: regular;
+	font-size: 1.7em;
+}
+/*Videos*/
+.videos-cocina {
+	display: flex;
+	height: 505px;
+}
+.bg-video {
+	width: 100%;
+	height: 505px;
+	/*position: absolute;
+	top: 0px;
+	right: 0px;
+	z-index: 10px;*/
+	background-size: contain; /*100%*/
+	background-color: #000;
+	background-position: center;
+	object-fit: cover;
+}
+/*Carta*/
+.carta-cocina {
+	background-image: url("imagenes/cocina/florPota.jpg");
+	background-attachment: fixed;
+	height: 980px;
+	display: flex;
+}
+.txt_carta {
+	color: rgba(0, 0, 0, 1);
+	padding-top: 20%;
+	padding-left: 10%;
+	width: 50%;
+}
+.txt-header {
+	font-size: 42px;
+	font-family: regular;
+	font-weight: 300;
+}
+.txt_carta a {
+	color: rgba(0, 0, 0, 1);
+	font-size: 1.2em;
+}
+.txt_carta p {
+	font-size: 1.2em;
+	width: 85%;
+}
+/*Camarero*/
+.camarero {
+	background-image: url("imagenes/cocina/camarero.jpg");
+	background-attachment: fixed;
+	height: 675px;
+}
+/*Bar-vinos*/
+.bar-vinos-cocina {
+	display: flex;
+}
+.txt_cocina_bar {
+	width: 80%;
+	margin: auto;
+	text-align: center;
+	color: rgba(0, 0, 0, 1);
+	font-family: regular;
+	font-size: 1.2em;
+}
+.txt_cocina_bar a {
+	color: rgba(0, 0, 0, 1);
+}
+.cocktel {
+	background-image: url("imagenes/cocina/cocktel.jpg");
+	height: 833px;
+}
+.cocina-bar {
+	background-color: #d4af4e;
+}
+.cocina-vinos {
+	background-color: #f6c5b7;
+}
+.copas-vino {
+	background-image: url("imagenes/cocina/copas-vino.jpg");
+	height: 833px;
+	order: 2;
+}
+/*Contactame*/
+.contactame {
+	height: 560px;
+	width: 40%;
+	display: flex;
+}
+.pie2 {
+	background-color: #604d45;
+	height: 560px;
+	font-size: 12px;
+	line-height: 17px;
+	color: white;
+}
+.logoBlancoMarron {
+	width: 100%;
+	margin: auto;
+}
+.logoBlancoMarron img {
+	width: 60px;
+	height: 60px;
+}
+.contactame p {
+	text-align: center;
+}
+.contactame-container {
+	width: 100%;
+	margin: auto;
+	text-align: center;
+}
+.colum-3 {
+	display: flex;
+	width: 100%;
+	margin: auto;
+}
+.redes_sociales_pie {
+	width: 100%;
+	margin: auto;
+	color: white;
+}
+.redes_sociales_pie i {
+	margin-right: 25px;
+}
+.blanco {
+	color: white;
+}
+.kit,
+.horario,
+.trabaja {
+	width: 33.33333%;
+}
+/*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+/* Equipo.html */
+/*Banner*/
+.banner-equipo {
+	background-image: linear-gradient(rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0.5) 100%),
+		url(imagenes/equipo/banner-equipo.jpg);
+	height: 585px;
+}
+.txt_salon {
+	width: 80%;
+	margin: auto;
+	text-align: center;
+	color: rgba(0, 0, 0, 1);
+	font-family: regular;
+	font-size: 1.2em;
+}
+.equipo-salon {
+	background-color: #d4af4e;
+}
+.txt_salon a {
+	color: black !important;
+}
+.sirvientes {
+	background-image: url("imagenes/equipo/sirvientes.jpg");
+	height: 800px;
+	order: 2;
+}
+
+.equipo-cocina {
+	background-image: url("imagenes/equipo/bolsitas.jpg");
+	background-attachment: fixed;
+	height: 980px;
+}
+.txt_equipo_cocina {
+	color: white;
+	padding: 20% 10%;
+	width: 60%;
+	text-align: center;
+}
+.agricultor {
+	background-image: url("imagenes/equipo/agricultor.jpg");
+	background-attachment: fixed;
+	height: 980px;
+}
+.manos {
+	background-image: url("imagenes/equipo/manos.jpg");
+	height: 933px;
+}
+.bar-salon {
+	background-color: #a4b575;
+}
+.sumilleria {
+	background-image: url("imagenes/equipo/sumilleria.jpg");
+	background-attachment: fixed;
+	height: 980px;
+}
+.sumilleria .txt_salon {
+	text-align: center;
+}
+.sumilleria p {
+	font-size: 1.2em;
+	width: 42%;
+	margin: auto;
+}
+.curriculum {
+	height: 495px;
+	background-color: #544150;
+}
+.curriculum p {
+	color: rgba(255, 255, 255, 1);
+	font-size: 1.2em;
+	width: 38%;
+	margin: auto;
+	text-align: center;
+}
+.curriculum a {
+	color: rgba(255, 255, 255, 1);
+}
+/* ...........................................TABLET............................................................................... */
+@media screen and (max-width: 1024px) {
+	body {
+		line-height: 30px;
+	}
+	.logo,
+	.redes_sociales,
+	.flecha {
+		display: none;
+	}
+	nav {
+		width: 100%;
+	}
+	nav ul li a {
+		display: block;
+		padding: 15px 15px;
+		font-size: 0.7em;
+	}
+	.marca {
+		left: 80%;
+	}
+	/*Sección historia */
+	.historia {
+		padding-top: 20%;
+		height: 550px;
+	}
+	.logoHistoria {
+		left: 48%;
+		top: 15%;
+	}
+	/*Sección cocina*/
+	.texto-plato {
+		padding-left: 3%;
+	}
+	/* Sección  Contacto */
+	.contacto {
+		padding: 15px;
+	}
+	.txt_contacto {
+		width: 100%;
+		padding: 20px 10px;
+		text-align: center;
+	}
+	.txt-banner-cocina {
+		padding: 0px 20px;
+		font-size: 1em;
+		height: 380px;
+	}
+	.contactame {
+		width: 100%;
+		padding: 0px 20px;
+		height: 610px;
+	}
+}
+/* .................................................................MÓVIL.......................................................... */
+@media screen and (max-width: 640px) {
+	/*botón menu hamburguesa*/
+	.btn {
+		display: block; /* mostrar imagen botón  */
+		position: fixed;
+		top: 10px;
+		right: 60px;
+		padding: 5px;
+		z-index: 2500;
+		width: 10%;
+	}
+	nav {
+		position: fixed;
+		top: 60px;
+		left: 0px;
+		display: none;
+		width: 100%;
+		float: none;
+		background-color: black;
+		z-index: 2000;
+		color: white;
+	}
+	nav ul {
+		/* ocultar menu horizontal */
+		display: block;
+		width: 100%;
+		height: auto;
+	}
+
+	nav ul li a {
+		padding: 15px 15px;
+		text-align: center; /* centrar los textos */
+		color: rgba(255, 255, 255, 1);
+		background-color: black;
+		border-bottom: solid 1px white;
+	}
+	#menu-movil {
+		width: 100%;
+	}
+	/* en version movil  posicionamos por si acaso el menu arriba. Por si no estuviera */
+	.menu {
+		position: fixed;
+		top: 80px;
+		left: 0px;
+		padding: 0px;
+		width: 100%;
+		transition: all 2s;
+		background-color: inherit;
+	}
+	body {
+		line-height: 25px;
+	}
+
+	/* Ocultamos logo y redes */
+	.logo {
+		display: none;
+	}
+	.logoCentral {
+		width: 120%;
+	}
+	.redes_sociales,
+	.marca,
+	.flecha {
+		display: none;
+	}
+	.banner {
+		background-image: url(imagenes/portada/s1_mov.png);
+		height: 560px;
+	}
+	/*Sección historia */
+	.historia {
+		padding-top: 30%;
+		height: 750px;
+	}
+	.logoHistoria {
+		left: 40%;
+		top: 5%;
+	}
+	/*Sección  Cocina */
+	.cocina {
+		display: block;
+		height: 750px;
+	}
+	.plato {
+		width: 100%;
+	}
+	.texto-plato {
+		padding: 20px;
+		margin-top: -80px;
+		width: 100%;
+		height: 200px;
+		color: black;
+	}
+	/*Sección  Carta */
+	.carta {
+		display: block;
+		height: auto;
+	}
+	.carta .w50 {
+		width: 100%;
+	}
+	.bar,
+	.vinos {
+		padding-top: 60px;
+		padding-bottom: 60px;
+	}
+	/* Sección  Equipo */
+	.equipo {
+		display: block;
+		padding: 70px 20px;
+		height: auto;
+	}
+	.txt_equipo {
+		width: 100%;
+		/*padding: 70px 20px;*/
+		text-align: center;
+	}
+	.txt_equipo > p {
+		font-size: 1em;
+		width: 100%;
+	}
+	/* Sección  Reserva */
+	.reservas {
+		display: block;
+		width: 100%;
+		height: auto;
+	}
+	.reservas .w50 {
+		width: 0%;
+	}
+	.txt_reservas {
+		width: 100%;
+		padding: 60px 20px;
+		text-align: center;
+	}
+	.txt_reservas > h1 {
+		margin-top: 20px;
+	}
+	.txt_reservas > p {
+		font-size: 1em;
+		width: 100%;
+	}
+	/* Sección  Contacto */
+	.contacto {
+		display: block;
+		width: 100%;
+		height: 990px;
+		padding: 15px;
+	}
+	.contacto .w50 {
+		width: 100%;
+	}
+	.txt_contacto {
+		width: 100%;
+		padding: 20px 10px;
+		text-align: center;
+	}
+	/* Estilos pagina cocina.html*/
+	.texto-banner {
+		font-size: 50px;
+	}
+	.mas {
+		display: none;
+	}
+	.txt-banner-cocina {
+		padding: 0px 10px;
+		font-size: 1em;
+		height: 200px;
+	}
+	.videos-cocina {
+		display: block;
+	}
+	.videos-cocina .w50 {
+		width: 100%;
+		overflow: hidden;
+		height: inherit;
+	}
+	.txt_carta {
+		padding-left: 0%;
+	}
+	.txt_carta p {
+		margin: auto;
+	}
+	.carta-cocina {
+		display: block;
+		background-size: cover;
+		background-attachment: none;
+		height: 480px;
+		margin-top: 500px;
+	}
+	.carta-cocina .w50 {
+		width: 0%;
+		display: none;
+	}
+	.carta-cocina .txt_carta {
+		width: 100%;
+		margin: auto;
+		text-align: center;
+	}
+	.camarero {
+		height: 710px;
+		background-attachment: none;
+	}
+	.bar-vinos-cocina {
+		display: block;
+	}
+	.bar-vinos-cocina .w66 {
+		width: 100%;
+	}
+	.bar-vinos-cocina .w33 {
+		width: 100%;
+	}
+	.cocina-bar,
+	.cocina-vinos {
+		height: 440px;
+	}
+	/* Estilos pagina equipo.html*/
+	.equipo-salon {
+		height: 485px;
+	}
+	.equipo-cocina {
+		height: 600px;
+		display: block;
+	}
+	.txt_equipo_cocina {
+		padding: 30% 20px;
+		width: 100%;
+		margin: auto;
+	}
+	.bar-vinos-cocina {
+		display: block;
+	}
+	.bar-salon {
+		height: 450px;
+	}
+	.agricultor,
+	.manos,
+	.sumilleria {
+		height: 600px;
+	}
+	.sumilleria p {
+		width: 90%;
+	}
+	.curriculum p {
+		width: 90%;
+	}
+	.colum-3 {
+		display: block;
+	}
+	.kit,
+	.horario,
+	.trabaja {
+		width: 100%;
+	}
+	.contactame {
+		width: 100%;
+		padding: 0px 20px;
+		height: 570px;
+	}
+	.logoBlancoMarron {
+		padding-top: 40px;
+	}
+}

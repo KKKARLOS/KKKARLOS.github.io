@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximun-scale=1, user-scalable=no" />
+		<title>Document</title>
+		<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+
+		<link rel="stylesheet" href="estilos/fonts.css" />
+		<link rel="stylesheet" href="estilos/estilos.css" />
+		<link rel="stylesheet" href="estilos/responsive.css" />
+
+		<script src="https://kit.fontawesome.com/3b6ee8ccaf.js" crossorigin="anonymous"></script>
+	</head>
+	<body>
+		<header class="w100 flexRow">
+			<!-- menu hamburguesa-->
+			<div class="btn-burger oculto">
+				<img id="burger" src="imagenes/burger-white.png" title="hamburguesa" />
+			</div>
+			<!-- Logo-->
+			<div class="logo">
+				<a href="index.html"><img src="imagenes/logo.png" alt="logo" /> </a>
+			</div>
+			<!-- Menu-->
+			<nav>
+				<ul>
+					<li><a href="index.html">Inicio</a></li>
+					<li><a class="active" href="#">Nosotros</a></li>
+					<li><a href="carta.html">Carta</a></li>
+					<li><a href="blog.html">Blog</a></li>
+					<li><a href="contacto.html">Contacto</a></li>
+				</ul>
+			</nav>
+			<!-- Idiomas-->
+			<div class="idiomas">
+				<a href="#">Eus/Es</a>
+			</div>
+		</header>
+
+		<!--banner-->
+
+		<section class="banner bg-nosotros im-bg flex mb-50">
+			<div class="texto-banner-flex w30">
+				Sobre nosotros
+			</div>
+		</section>
+
+		<section class="flex d-block w93 mb-50">
+			<div class="flexColumn mb-100">
+				<div class="texto-body">
+					Nuestro proyecto culinario comenzó en Hondarribi en unas fiestas de Santo Tomás en Diciembre
+					del 2015. Su éxito fue tal, que nos hemos convertido en una de las mejores foodtruck de
+					Euskadi.
+				</div>
+				<div class="titulo-cabecera"><span class="naranja">Excelencia</span> y profesionalidad</div>
+			</div>
+		</section>
+		<!--Equipo cocineros-->
+		<section class="flex w100 d-block mb-100">
+			<div class="w30 bg-cocinero im-bg"></div>
+			<div class="w40 equipo-text">
+				Ttipi-Ttapa es el proyecto culinario sobre ruedas que nació a finales de 2015 de la mano de Anne y
+				Aitor, dos apasionados de la cocina con muchas ganas de empezar una aventura gastronómica. Por aquel
+				entonces nos lanzamos a rodar por las calles de Gipuzkoa con nuestras burgers a la brasa.
+				<br /><br />
+				Nuestro secreto es hacer las hamburguesas con la mejor carne, proveniente de varias regiones del
+				norte de España, sin congelarlas ni precocinarlas, hechas a la brasa para que tengan ese
+				inconfundible sabor, con salsas caseras, pan fresco artesano hecho cada día, vegetales de temporada,
+				patatas naturales… Ya puedes elegir entre las clásicas, contemporáneas y gourmet.
+				<br /><br />Sencillamente apostamos por carne de primera hecha a la parrilla, acompañada de los
+				mejores y más frescos ingredientes, combinándolos de forma sorprendente para crear un innovador
+				lugar de culto a este delicioso plato.
+			</div>
+			<div class="w30 bg-cocinera im-bg"></div>
+		</section>
+
+		<footer class="w100 flexRow">
+			<div class="pie-izda flex">
+				<!-- Logo-->
+				<div class="logo">
+					<a href="index.html"><img id="logo-pie" src="imagenes/logo.png" alt="logo" /> </a>
+				</div>
+				<!-- Contacto-->
+				<div class="contacto">
+					<i class="fas fa-mobile-alt fa-1x"></i>&nbsp;&nbsp;&nbsp;&nbsp;+34 943 42 07 03<br />
+					De Lunes a Domingo<br />
+					Ttipi_Ttapa@gmail.com
+				</div>
+			</div>
+			<!-- Redes Sociales-->
+			<div class="pie-dcha">
+				Politica de Privacidad<br />
+				Aviso Legal<br />
+				Copyright Ttipi-Ttapa 2020<br />
+				Siguenos en: <i class="fab fa-facebook-f fa-1x"></i>&nbsp;
+				<i class="fab fa-instagram fa-1x"></i>&nbsp; <i class="fab fa-twitter fa-1x"></i>&nbsp;
+			</div>
+		</footer>
+		<script>
+			$(document).ready(function () {
+				/*$("ul")
+					.find("li a")
+					.click(function () {
+						$("ul li a").removeClass("active");
+						$(this).addClass("active");
+					});*/
+				$(".btn-burger").click(function () {
+					//$("nav").slideToggle();
+					//$("nav").toggleClass("visible oculto");
+					if ($("nav").hasClass("visible")) $("nav").addClass("oculto").removeClass("visible");
+					else $("nav").addClass("visible").removeClass("oculto");
+
+					if ($("#burger").attr("src") == "imagenes/burger-white.png")
+						$("#burger").attr("src", "imagenes/close-white.png");
+					else {
+						$("#burger").attr("src", "imagenes/burger-white.png");
+					}
+				});
+
+				$(window).resize(function () {
+					if ($(window).width() > 640) $("nav").addClass("visible").removeClass("oculto");
+					else {
+						$("nav").addClass("oculto").removeClass("visible");
+						$("#burger").attr("src", "imagenes/burger-white.png");
+					}
+				});
+
+				// para que cierre el menu, solo en resolución menor que 640px
+				$("#menu-movil li a").click(function () {
+					if ($(window).width() <= 640) {
+						$("nav").slideUp();
+					}
+				});
+			});
+		</script>
+	</body>
+</html>

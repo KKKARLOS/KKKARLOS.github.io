@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximun-scale=1, user-scalable=no" />
+		<title>Document</title>
+		<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+
+		<link rel="stylesheet" href="estilos/fonts.css" />
+		<link rel="stylesheet" href="estilos/estilos.css" />
+		<link rel="stylesheet" href="estilos/responsive.css" />
+
+		<script src="https://kit.fontawesome.com/3b6ee8ccaf.js" crossorigin="anonymous"></script>
+	</head>
+	<body>
+		<header class="w100 flexRow">
+			<!-- menu hamburguesa-->
+			<div class="btn-burger oculto">
+				<img id="burger" src="imagenes/burger-white.png" title="hamburguesa" />
+			</div>
+			<!-- Logo-->
+			<div class="logo">
+				<a href="index.html"><img width="100%" src="imagenes/logo.png" alt="logo" /> </a>
+			</div>
+			<!-- Menu-->
+			<nav>
+				<ul>
+					<li><a class="active" href="#">Inicio</a></li>
+					<li><a href="nosotros.html">Nosotros</a></li>
+					<li><a href="carta.html">Carta</a></li>
+					<li><a href="blog.html">Blog</a></li>
+					<li><a href="contacto.html">Contacto</a></li>
+				</ul>
+			</nav>
+			<!-- Idiomas-->
+			<div class="idiomas">
+				<a href="#">Eus/Es</a>
+			</div>
+		</header>
+
+		<!--banner-->
+
+		<section class="banner bg-inicio im-bg  mb-50">
+			<div class="texto-banner">
+				Ttipi-Ttapa
+			</div>
+			<div class="texto-banner-2">
+				Sabor de verdad
+			</div>
+		</section>
+
+		<section class="flex d-block w93 mb-50">
+			<div class="w40 texto-calendario">ENCUENTRANOS</div>
+			<div class="w30 pd-50">
+				<div class="caja">
+					<div class="caja-titulo">
+						JULIO 2020
+					</div>
+					<div class="caja-texto">
+						<p>
+							SEMANA ( 1 - 5). Estaremos en Getxo. Playa de Ereaga.
+						</p>
+						<p>
+							SEMANA ( 6 - 12). Estaremos en Plentzia. Playa de Plentzia.
+						</p>
+						<p>
+							SEMANA ( 13 - 19). Estaremos en Sopelana. Playa Barinatxe.
+						</p>
+						<p>
+							SEMANA ( 20 - 26). Estaremos en Bermeo. Playa Aritxatzu.
+						</p>
+						<p>
+							SEMANA ( 27- 31). Estaremos en Lekeitio. Playa de Isuntza.
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="w30 pd-50">
+				<div class="caja">
+					<div class="caja-titulo">
+						AGOSTO 2020
+					</div>
+					<div class="caja-texto">
+						<p>
+							SEMANA ( 1 - 9). Estaremos en Donostia. Playa Zurriola.
+						</p>
+						<p>
+							SEMANA ( 1 - 16). Estaremos en Hondarribi. Playa Ondartza.
+						</p>
+						<p>
+							SEMANA ( 17 - 23) Estaremos en Zarautz. Playa de Zarautz.
+						</p>
+						<p>
+							SEMANA ( 24- 30). Estaremos en Zumaia. Playa Itzurun.
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!--Hamburguesa del mes-->
+		<section class="flex w93 d-block">
+			<div class="w50 bg-burger-mes im-bg"></div>
+			<div class="w50 bg-orange flex burger-text">
+				<div class="w70">
+					<div class="texto-burger-mes-1">HAMBURGUESA DEL MES</div>
+					<div class="texto-burger-mes-2">Banh Mi Tao</div>
+					<div class="texto-burger-mes-3">
+						Burger de cerdo celta, guacamole, canónigos, mayonesa de Sriracha y verduras encurtidas.
+						Origen inspirado en el Bocadillo típico Vietnamita
+					</div>
+					<div class="texto-burger-mes-4">€ 10.00</div>
+				</div>
+			</div>
+		</section>
+		<!--Burgers gourmet-->
+		
+		<section class="w93 w-movil">
+			<div class="flexColumn mb-150">
+				<div class="titulo-cabecera">BURGERS <span class="naranja">GOURMET</span></div>
+				<div class="texto-body">
+					Con nuestra food truck Ttipi-Ttapa, queremos llevar nuestras burgers a tu ciudad. Siguiendo
+					nuestra filosofía , hemos instalado dentro nuestro Josper, con el fin de seguir haciendo las
+					burgers a la brasa. También llevamos nuestra Cerveza Artesana Goose, por si necesitáis
+					acompañar nuestras burgers con una buena birra.
+				</div>
+			</div>
+			<div class="galeria-gourmet">
+				<div class="block-burger flex">
+					<div class="w50 block-movil flex">
+						<div class="w40 img-redonda im1 im-bg"></div>
+						<div class="w60 flexColumn">
+							<div class="texto-burger-galeria-head">Burger Txaparrita</div>
+							<div class="texto-burger-galeria-body">
+								Pollo sazonado, parmesano, pollo rasher curado con arce, cebolla roja,
+								champiñones sobre una base de crema fresca de ajo, cubierto con cebolleta fresca
+								en rodajas
+							</div>
+							<div class="texto-burger-galeria-precio">€7.80</div>
+						</div>
+					</div>
+					<div class="w50 block-movil flex">
+						<div class="w40 img-redonda im2 im-bg"></div>
+						<div class="w60 flexColumn">
+							<div class="texto-burger-galeria-head">Burger Pampera</div>
+							<div class="texto-burger-galeria-body">
+								Burger de ternera, queso Gruyère, rúcula, crujiente de cecina y salteado de setas Shiitake y champiñones Portobello
+							</div>
+							<div class="texto-burger-galeria-precio">€ 9.20</div>
+						</div>
+					</div>
+				</div>
+				<div class="block-burger flex">
+					<div class="w50 block-movil flex">
+						<div class="w40 img-redonda im3 im-bg"></div>
+						<div class="w60 flexColumn">
+							<div class="texto-burger-galeria-head">Burger Supreme</div>
+							<div class="texto-burger-galeria-body">
+								Burger de buey con queso azul, lechuga, tomate y cebolla caramelizada en pan artesano
+							</div>
+							<div class="texto-burger-galeria-precio">€8.50</div>
+						</div>
+					</div>
+					<div class="w50 block-movil flex">
+						<div class="w40 img-redonda im4 im-bg"></div>
+						<div class="w60 flexColumn">
+							<div class="texto-burger-galeria-head">Burger Corleone</div>
+							<div class="texto-burger-galeria-body">
+								Burger de ternera, foie fresco a la parrilla, manzana caramelizada, lechuga y tomate
+							</div>
+							<div class="texto-burger-galeria-precio">€ 10.40</div>
+						</div>
+					</div>
+				</div>
+				<div class="block-burger flex">
+					<div class="w50 block-movil flex">
+						<div class="w40 img-redonda im5 im-bg"></div>
+						<div class="w60 flexColumn">
+							<div class="texto-burger-galeria-head">Burger Sumum</div>
+							<div class="texto-burger-galeria-body">
+								Burger de ternera, queso San Simón gratinado, panceta crujiente, lechuga, tomate y cebolla roja
+							</div>
+							<div class="texto-burger-galeria-precio">€10.80</div>
+						</div>
+					</div>
+					<div class="w50 block-movil flex">
+						<div class="w40 img-redonda im6 im-bg"></div>
+						<div class="w60 flexColumn">
+							<div class="texto-burger-galeria-head">Burger Serranita</div>
+							<div class="texto-burger-galeria-body">
+								Burger de ternera, rúcula, mozzarella fresca fundida, orégano, tomate seco en aceite de oliva y cebolla crujiente
+							</div>
+							<div class="texto-burger-galeria-precio">€ 7.90</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="reservarTruck mb-200">
+			<div class="titulo-cabecera"><span class="naranja">RESERVA NUESTRO</span> FOODTRUCK</div>
+		</section>
+		<section class="flexRow bannerFoodTruck im-bg">
+			<div class="textoTruck">
+				¿Tienes un evento público o privado?, ¿Estás organizando una boda, un catering, un cumpleaños, un
+				concierto, un market, una fiesta? ¿Te gustaría contar con la presencia y los servicios de nuestra
+				food trucks? Utiliza nuestra Central de Reservas y contacta directamente con nosotros.
+			</div>
+			<div class="btnTruck">
+				RESERVAR
+			</div>
+		</section>
+		<section class="personalizarBurger mb-200">
+			<div class="titulo-cabecera">PERSONALIZA <span class="naranja">TU BURGER</span></div>
+		</section>
+	
+		<section class="flexEndRow bannerPersonalizarBurger im-bg">
+			<div class="flexColumn personalizar">
+				<div class="texto-head-personalizar">
+					Te damos la oportunidad de sacar el chef que llevas dentro y ponemos a tu disposición todos
+					nuestros productos de primera calidad para que crees la hamburguesa de tus sueños. Nosotros
+					ponemos el pan, la carne y los ingredientes. Tú pones la idea. Sin aditivos ni conservantes,
+					todo natural. <br /><br />Escoge el tipo de pan, la carne y los ingredientes para condimentarla. Se
+					incluyen patatas fritas y ensalada.
+				</div>
+				<div class="precio-head-personalizar">
+					€4,50
+				</div>
+				<div class="flexRow pan-carne">
+					<div class="pan">
+						<div class="head-pan-carne">PAN</div>
+						<div class="body-pan-carne">
+							<ul>
+								<li class="check">
+									<input type="radio" value="0" name="pan" id="tradicional" checked />
+									<label for="tradicional">Tradicional</label>									
+								</li>
+								<li class="check">
+									<input type="radio" value="0" name="pan" id="brioche" />
+									<label for="brioche">Brioche</label>									
+								</li>
+								<li class="check">
+									<input type="radio" value="1" name="pan" id="madre"  />
+									<label for="madre">De masa madre (1€)</label>									
+								</li>
+								<li class="check">
+									<input type="radio" value="1" name="pan" id="gluten"  />
+									<label for="gluten">Sin gluten (1€)</label>									
+								</li>																												
+							</ul>
+						</div>
+					</div>
+					<div class="carne">
+						<div class="head-pan-carne">CARNE</div>
+						<div class="body-pan-carne">
+							<ul>
+								<li class="check">
+									<input type="radio"  value="0.50" name="carne" id="vaca"  />
+									<label for="vaca">Vaca negra avileña (150gr.) (0,50€)</label>									
+								</li>
+								<li class="check">
+									<input type="radio"  value="2.50" name="carne" id="angus" />
+									<label for="angus">Angus (200gr.) (2,50€)</label>									
+								</li>
+								<li class="check">
+									<input type="radio" value="0" name="carne" id="pollo"  checked />
+									<label for="pollo">Pollo plancha o empanado</label>									
+								</li>
+								<li class="check">
+									<input type="radio" value="0" name="carne" id="cajun"  />
+									<label for="cajun">Sin gluten (1€)</label>									
+								</li>																												
+							</ul>							
+						</div>
+					</div>
+				</div>
+				<div class="head-pan-carne">
+					INGREDIENTES Y SALSAS
+				</div>
+				<div class="flexRow bg-ingredientes">
+					<div class="ingredientes">
+						<div class="body-ingredientes">
+							<ul>
+								<li class="check">
+									<input type="checkbox" value="1.20" name="ingredientes" id="bacon" />
+									<label for="bacon">Bacon (1,20€)</label>									
+								</li>
+								<li class="check">
+									<input type="checkbox" value="1.20" name="ingredientes" id="aguacate" />
+									<label for="aguacate">Aguacate (1,20€)</label>									
+								</li>
+								<li class="check">
+									<input type="checkbox"  value="1.20" name="ingredientes" id="huevo"  />
+									<label for="huevo">Huevo (1,20€)</label>									
+								</li>
+								<li class="check">
+									<input type="checkbox" value="1" name="ingredientes" id="cebolla-frita"  />
+									<label for="cebolla-frita">Cebolla frita (1€)</label>									
+								</li>
+								<li class="check">
+									<input type="checkbox" value="1" name="ingredientes" id="cebolla-caramelizada"  />
+									<label for="cebolla-caramelizada">Cebolla caramelizada (1€)</label>									
+								</li>	
+								<li class="check">
+									<input type="checkbox" value="0.40" name="ingredientes" id="cebolla-natural"  />
+									<label for="cebolla-natural">Cebolla natural (0.40€)</label>									
+								</li>																																																						
+							</ul>								
+							</div>
+					</div>
+					<div class="ingredientes">
+						<div class="body-ingredientes">
+							<ul>
+								<li class="check">
+									<input type="checkbox" value="1" name="ingredientes" id="cheddar" />
+									<label for="cheddar">Queso Cheddar (1€)</label>									
+								</li>
+								<li class="check">
+									<input type="checkbox" value="1" name="ingredientes" id="azul" />
+									<label for="azul">Queso Azul (1€)</label>									
+								</li>
+								<li class="check">
+									<input type="checkbox"  value="0.20" name="ingredientes" id="lechuga"  />
+									<label for="lechuga">Lechuga(0.20€)</label>									
+								</li>
+								<li class="check">
+									<input type="checkbox" value="0.20" name="ingredientes" id="tomate"  />
+									<label for="tomate">Tomate (0.20€)</label>									
+								</li>
+								<li class="check">
+									<input type="checkbox" value="0.60" name="ingredientes" id="pepinillo"  />
+									<label for="pepinillo">Pepinillo (0.60€)</label>									
+								</li>	
+								<li class="check">
+									<input type="checkbox" value="0.60" name="ingredientes" id="jalapeños"  />
+									<label for="jalapeños">Jalapeños (0.60€)</label>									
+								</li>																																																						
+							</ul>									
+						</div>
+					</div>
+					<div class="ingredientes">
+						<div class="body-ingredientes">
+							<ul>
+								<li class="check">
+									<input type="checkbox" value="0.60" name="ingredientes" id="salsacheddar" />
+									<label for="salsacheddar">Salsa Cheddar (0.60€)</label>									
+								</li>
+								<li class="check">
+									<input type="checkbox" value="0.60" name="ingredientes" id="mostaza" />
+									<label for="mostaza">Mostaza y Miel(0.60€)</label>									
+								</li>
+								<li class="check">
+									<input type="checkbox" value="0.60" name="ingredientes" id="barbacoa" />
+									<label for="barbacoa">Salsa barbacoa (0.60€)</label>									
+								</li>
+								<li class="check">
+									<input type="checkbox" value="0.60" name="ingredientes" id="hot" />
+									<label for="hot">Salsa Hot (0.60€)</label>									
+								</li>
+								<li class="check">
+									<input type="checkbox" value="0.60" name="ingredientes" id="curry"  />
+									<label for="curry">Salsa Curry(0.60€)</label>									
+								</li>																																																				
+							</ul>								
+						</div>
+					</div>
+				</div>
+				<div class="flexRow total">
+					<div class="total-texto">
+						TOTAL
+					</div>
+					<div class="total-importe">
+						€<span id="tot-importe">4.50</span>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="flex productos-frescos im-bg">
+			<div class="productos-texto">
+				Sólo utilizamos productos frescos
+			</div>
+		</section>
+		<section class="flex bg-llamar">
+			<div class="llamar">
+				<span class="txt-llamanos">LLámanos</span>
+				<i class="fas icon-movil naranja fa-mobile-alt fa-1x"></i
+				><span class="txt-telefono">+34 943 42 07 03</span>
+			</div>
+		</section>
+		<section class="flex servicios">
+			<div class="flexColumn domicilio">
+				<div class="txt-domicilio">Servicios a domicilio<br /><br /><br /></div>
+				<img src="imagenes/inicio/pedido_domicilio.png" width="35%" alt="" />
+			</div>
+			<div class="flexColumn recogida">
+				<div class="txt-recogida">Pedidos a domicilio<br /><br /><br /></div>
+				<img src="imagenes/inicio/pedido_llevar.png" width="35%" alt="" />
+			</div>
+			<div class="flexColumn eventos">
+				<div class="txt-eventos">Eventos
+				<img id="eventos" src="imagenes/inicio/truckdelivery.png" width="65%" alt="" />
+			</div>
+		</section>
+		<section class="flex bg-instagram">
+			<div class="instagram">
+				<span class="txt-sigue naranja">SIGUENOS</span>&nbsp;&nbsp;<span class="txt-instagram"
+					>EN INSTAGRAM</span><i class="fab icon-instagram fa-instagram"></i>
+			</div>
+		</section>
+		<section class="galeria w93 mb-50">
+			<div class="fila">
+				<div class="columna">
+					<img class="efectoAumento" src="imagenes/inicio/galeria1.jpg" width="100%" height="100%" alt=" " />
+				</div>
+				<div class="columna">
+					<img class="efectoAumento" src="imagenes/inicio/galeria2.jpg" width="100%" height="50%" alt=" " />
+					<img class="efectoAumento" src="imagenes/inicio/galeria3.jpg" width="100%" height="50%" alt=" " />
+				</div>
+				<div class="columna">
+					<img class="efectoAumento" src="imagenes/inicio/galeria4.png" width="100%" height="100%" alt=" " />
+				</div>				
+				<div class="columna">
+					<img class="efectoAumento" src="imagenes/inicio/galeria5.jpg" width="100%" height="33.3%" alt=" " />
+					<img class="efectoAumento" src="imagenes/inicio/galeria6.png" width="100%" height="33.3%" alt=" " />
+					<img class="efectoAumento" src="imagenes/inicio/galeria7.png" width="100%" height="33.3%" alt=" " />
+				</div>	
+			</div>
+		</section>
+		<footer class="w100 flexRow">
+			<div class="pie-izda flex">
+				<!-- Logo-->
+				<div class="logo">
+					<a href="index.html"><img id="logo-pie" src="imagenes/logo.png" alt="logo" /> </a>
+				</div>
+				<!-- Contacto-->
+				<div class="contacto">
+					<i class="fas fa-mobile-alt fa-1x"></i>&nbsp;&nbsp;&nbsp;&nbsp;+34 943 42 07 03<br />
+					De Lunes a Domingo<br />
+					Ttipi_Ttapa@gmail.com
+				</div>
+			</div>
+			<!-- Redes Sociales-->
+			<div class="pie-dcha">
+				Politica de Privacidad<br />
+				Aviso Legal<br />
+				Copyright Ttipi-Ttapa 2020<br />
+				Siguenos en: <i class="fab fa-facebook-f fa-1x"></i>&nbsp;
+				<i class="fab fa-instagram fa-1x"></i>&nbsp; <i class="fab fa-twitter fa-1x"></i>&nbsp;
+			</div>
+		</footer>					
+		<script>
+			$(document).ready(function () {
+				/*
+				$("ul")
+					.find("li a")
+					.click(function () {
+						$("ul li a").removeClass("active");
+						$(this).addClass("active");
+					});*/
+				$(".btn-burger").click(function () {
+					//$("nav").slideToggle();
+					//$("nav").toggleClass("visible oculto");
+					if ($("nav").hasClass("visible")) $("nav").addClass("oculto").removeClass("visible");
+					else $("nav").addClass("visible").removeClass("oculto");
+
+					if ($("#burger").attr("src") == "imagenes/burger-white.png")
+						$("#burger").attr("src", "imagenes/close-white.png");
+					else {
+						$("#burger").attr("src", "imagenes/burger-white.png");
+					}
+				});
+
+				$(window).resize(function () {
+					if ($(window).width() > 640) $("nav").addClass("visible").removeClass("oculto");
+					else {
+						$("nav").addClass("oculto").removeClass("visible");
+						$("#burger").attr("src", "imagenes/burger-white.png");
+					}
+				});
+
+				// para que cierre el menu, solo en resolución menor que 640px
+				$("#menu-movil li a").click(function () {
+					if ($(window).width() <= 640) {
+						$("nav").slideUp();
+					}
+				});
+
+				//Calcular Total
+				function total(){
+					valor = parseFloat($(".pan .check input:radio[name=pan]:checked").val());	
+					valor += parseFloat($(".carne .check input:radio[name=carne]:checked").val());	
+					$(".ingredientes .check input:checkbox[name=ingredientes]:checked").each(function(){
+						//cada elemento seleccionado
+						valor += parseFloat($(this).val());
+					});
+
+					valor = 4.50 + valor;		
+					return valor;	
+				}
+				$(".pan").click(function () {	 
+					$("#tot-importe").text(total().toFixed(2));
+				});
+				$(".carne").click(function () {	 
+					$("#tot-importe").text(total().toFixed(2));	
+				});
+				$(".ingredientes").click(function () {	 
+					$("#tot-importe").text(total().toFixed(2));	
+				});				
+								
+			});
+		</script>
+	</body>
+</html>

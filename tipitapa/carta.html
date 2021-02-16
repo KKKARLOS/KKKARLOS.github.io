@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximun-scale=1, user-scalable=no" />
+		<title>Document</title>
+		<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+
+		<link rel="stylesheet" href="estilos/fonts.css" />
+		<link rel="stylesheet" href="estilos/estilos.css" />
+		<link rel="stylesheet" href="estilos/responsive.css" />
+
+		<script src="https://kit.fontawesome.com/3b6ee8ccaf.js" crossorigin="anonymous"></script>
+	</head>
+	<body>
+		<header class="w100 flexRow">
+			<!-- menu hamburguesa-->
+			<div class="btn-burger oculto">
+				<img id="burger" src="imagenes/burger-white.png" title="hamburguesa" />
+			</div>
+			<!-- Logo-->
+			<div class="logo">
+				<a href="index.html"><img src="imagenes/logo.png" alt="logo" /> </a>
+			</div>
+			<!-- Menu-->
+			<nav>
+				<ul>
+					<li><a href="index.html">Inicio</a></li>
+					<li><a href="nosotros.html">Nosotros</a></li>
+					<li><a class="active"  href="#">Carta</a></li>
+					<li><a href="blog.html">Blog</a></li>
+					<li><a href="contacto.html">Contacto</a></li>
+				</ul>
+			</nav>
+			<!-- Idiomas-->
+			<div class="idiomas">
+				<a href="#">Eus/Es</a>
+			</div>
+		</header>
+
+		<!--banner-->
+
+		<section class="banner bg-carta im-bg flex mb-50">
+			<div class="texto-banner-flex w30">
+					Nuestra carta
+			</div>
+		</section>
+
+		<section class="flex d-block w93 mb-50">
+			<div class="flexColumn mb-100">
+				<div class="texto-body">
+					La vida está para morderla, para dejar que te sorprenda y para sonreír después <br />de cada
+					bocado
+				</div>
+				<div class="titulo-cabecera"><span class="naranja">Prueba y </span> luego lo cuentas</div>
+			</div>
+		</section>
+		<section class="flex bg-entrantes im-bg mb-50">
+			<div class="carta-texto">
+				ENTRANTES
+			</div>
+		</section>
+
+		<section class="carta">
+			<div class="flex w80 fila-carta">
+				<div class="flexColumnStart w35 col">
+					<span class="head-fila">Entrante 1</span>
+					<p>Descripción entrante 1</p>
+				</div>
+				<div class="flexColumnStart w15 col"><span class="precio-fila">$9,90</span><br /></div>
+				<div class="flexColumnStart w35 col">
+					<span class="head-fila">Entrante 2</span>
+					<p>Descripción entrante 2</p>
+				</div>
+				<div class="flexColumnStart w15 col"><span class="precio-fila">$9,90</span><br /></div>
+			</div>
+
+			<div class="flex fila-carta">
+				<div class="flexColumnStart w35 col">
+					<span class="head-fila">Entrante 3</span>
+					<p>Descripción entrante 3</p>
+				</div>
+				<div class="flexColumnStart w15 col"><span class="precio-fila">$9,90</span><br /></div>
+				<div class="flexColumnStart w35 col">
+					<span class="head-fila">Entrante 4</span>
+					<p>Descripción entrante 4</p>
+				</div>
+				<div class="flexColumnStart w15 col"><span class="precio-fila">$9,90</span><br /></div>
+			</div>
+			<div class="flex fila-carta">
+				<div class="flexColumnStart w35 col">
+					<span class="head-fila">Entrante 5</span>
+					<p>Descripción entrante 5</p>
+				</div>
+				<div class="flexColumnStart w15 col"><span class="precio-fila">$9,90</span><br /></div>
+				<div class="flexColumnStart w35 col">
+					<span class="head-fila">Entrante 6</span>
+					<p>Descripción entrante 6</p>
+				</div>
+				<div class="flexColumnStart w15 col"><span class="precio-fila">$9,90</span><br /></div>
+			</div>
+			<div class="flex fila-carta">
+				<div class="flexColumnStart w35 col">
+					<span class="head-fila">Entrante 7</span>
+					<p>Descripción entrante 7</p>
+				</div>
+				<div class="flexColumnStart w15 col"><span class="precio-fila">$9,90</span><br /></div>
+				<div class="flexColumnStart w35 col">
+					<span class="head-fila">Entrante 8</span>
+					<p>Descripción entrante 8</p>
+				</div>
+				<div class="flexColumnStart w15 col"><span class="precio-fila">$9,90</span><br /></div>
+			</div>
+			<div class="flex fila-carta">
+				<div class="flexColumnStart w35 col">
+					<span class="head-fila">Entrante 9</span>
+					<p>Descripción entrante 9</p>
+				</div>
+				<div class="flexColumnStart w15 col"><span class="precio-fila">$9,90</span><br /></div>
+				<div class="flexColumnStart w35 col">
+					<span class="head-fila">Entrante 10</span>
+					<p>Descripción entrante 10</p>
+				</div>
+				<div class="flexColumnStart w15 col"><span class="precio-fila">$9,90</span><br /></div>
+			</div>
+		</section>
+
+		<section class="flex bg-ensaladas im-bg mb-50">
+			<div class="carta-texto">
+				ENSALADAS
+			</div>
+		</section>
+		<section class="carta">
+			<div class="flex fila-carta">
+				<div class="flexColumnStart w35 col">
+					<span class="head-fila">Ensalada 1</span>
+					<p>Descripción ensalada 1</p>
+				</div>
+				<div class="flexColumnStart w15 col"><span class="precio-fila">$9,90</span><br /></div>
+				<div class="flexColumnStart w35 col">
+					<span class="head-fila">Ensalada 2</span>
+					<p>Descripción ensalada 2</p>
+				</div>
+				<div class="flexColumnStart w15 col"><span class="precio-fila">$9,90</span><br /></div>
+			</div>
+			<div class="flex fila-carta">
+				<div class="flexColumnStart w35 col">
+					<span class="head-fila">Ensalada 3</span>
+					<p>Descripción ensalada 3</p>
+				</div>
+				<div class="flexColumnStart w15 col"><span class="precio-fila">$9,90</span><br /></div>
+				<div class="flexColumnStart w35 col">
+					<span class="head-fila">Ensalada 4</span>
+					<p>Descripción ensalada 4</p>
+				</div>
+				<div class="flexColumnStart w15 col"><span class="precio-fila">$9,90</span><br /></div>
+			</div>
+			<div class="flex fila-carta">
+				<div class="flexColumnStart w35 col">
+					<span class="head-fila">Ensalada 5</span>
+					<p>Descripción ensalada 5</p>
+				</div>
+				<div class="flexColumnStart w15 col"><span class="precio-fila">$9,90</span><br /></div>
+				<div class="flexColumnStart w35 col">
+					<span class="head-fila">Ensalada 6</span>
+					<p>Descripción ensalada 6</p>
+				</div>
+				<div class="flexColumnStart w15 col"><span class="precio-fila">$9,90</span><br /></div>
+			</div>
+			<div class="flex fila-carta">
+				<div class="flexColumnStart w35 col">
+					<span class="head-fila">Ensalada 7</span>
+					<p>Descripción ensalada 7</p>
+				</div>
+				<div class="flexColumnStart w15 col"><span class="precio-fila">$9,90</span><br /></div>
+				<div class="flexColumnStart w35 col">
+					<span class="head-fila">Ensalada 8</span>
+					<p>Descripción ensalada 8</p>
+				</div>
+				<div class="flexColumnStart w15 col"><span class="precio-fila">$9,90</span><br /></div>
+			</div>
+			<div class="flex fila-carta">
+				<div class="flexColumnStart w35 col">
+					<span class="head-fila">Ensalada 9</span>
+					<p>Descripción ensalada 9</p>
+				</div>
+				<div class="flexColumnStart w15 col"><span class="precio-fila">$9,90</span><br /></div>
+				<div class="flexColumnStart w35 col">
+					<span class="head-fila">Ensalada 10</span>
+					<p>Descripción ensalada 10</p>
+				</div>
+				<div class="flexColumnStart w15 col"><span class="precio-fila">$9,90</span><br /></div>
+			</div>
+		</section>
+
+		<section class="flex bg-hamburguesas im-bg mb-50">
+			<div class="carta-texto">
+				HAMBURGUESAS
+			</div>
+		</section>
+		<section class="carta">
+			<div class="flex fila-carta">
+				<div class="flexColumnStart w35 col">
+					<span class="head-fila">Hamburguesa 1</span>
+					<p>Descripción hamburguesa 1</p>
+				</div>
+				<div class="flexColumnStart w15 col"><span class="precio-fila">$9,90</span><br /></div>
+				<div class="flexColumnStart w35 col">
+					<span class="head-fila">Hamburguesa 2</span>
+					<p>Descripción hamburguesa 2</p>
+				</div>
+				<div class="flexColumnStart w15 col"><span class="precio-fila">$9,90</span><br /></div>
+			</div>
+			<div class="flex fila-carta">
+				<div class="flexColumnStart w35 col">
+					<span class="head-fila">Hamburguesa 3</span>
+					<p>Descripción hamburguesa 3</p>
+				</div>
+				<div class="flexColumnStart w15 col"><span class="precio-fila">$9,90</span><br /></div>
+				<div class="flexColumnStart w35 col">
+					<span class="head-fila">Hamburguesa 4</span>
+					<p>Descripción hamburguesa 4</p>
+				</div>
+				<div class="flexColumnStart w15 col"><span class="precio-fila">$9,90</span><br /></div>
+			</div>
+			<div class="flex fila-carta">
+				<div class="flexColumnStart w35 col">
+					<span class="head-fila">Hamburguesa 5</span>
+					<p>Descripción hamburguesa 5</p>
+				</div>
+				<div class="flexColumnStart w15 col"><span class="precio-fila">$9,90</span><br /></div>
+				<div class="flexColumnStart w35 col">
+					<span class="head-fila">Hamburguesa 6</span>
+					<p>Descripción hamburguesa 6</p>
+				</div>
+				<div class="flexColumnStart w15 col"><span class="precio-fila">$9,90</span><br /></div>
+			</div>
+			<div class="flex fila-carta">
+				<div class="flexColumnStart w35 col">
+					<span class="head-fila">Hamburguesa 7</span>
+					<p>Descripción hamburguesa 7</p>
+				</div>
+				<div class="flexColumnStart w15 col"><span class="precio-fila">$9,90</span><br /></div>
+				<div class="flexColumnStart w35 col">
+					<span class="head-fila">Hamburguesa 8</span>
+					<p>Descripción hamburguesa 8</p>
+				</div>
+				<div class="flexColumnStart w15 col"><span class="precio-fila">$9,90</span><br /></div>
+			</div>
+			<div class="flex fila-carta">
+				<div class="flexColumnStart w35 col">
+					<span class="head-fila">Hamburguesa 9</span>
+					<p>Descripción hamburguesa 9</p>
+				</div>
+				<div class="flexColumnStart w15 col"><span class="precio-fila">$9,90</span><br /></div>
+				<div class="flexColumnStart w35 col">
+					<span class="head-fila">Hamburguesa 10</span>
+					<p>Descripción hamburguesa 10</p>
+				</div>
+				<div class="flexColumnStart w15 col"><span class="precio-fila">$9,90</span><br /></div>
+			</div>
+		</section>
+				
+		<section class="flex bg-perritos im-bg mb-50">
+			<div class="carta-texto">
+				BOCADILLOS </br></br>
+				Y PERRITOS
+			</div>
+		</section>
+		<section class="carta">
+			<div class="flex fila-carta">
+				<div class="flexColumnStart w35 col">
+					<span class="head-fila">Bocadillo 1</span>
+					<p>Descripción bocadillo 1</p>
+				</div>
+				<div class="flexColumnStart w15 col"><span class="precio-fila">$9,90</span><br /></div>
+				<div class="flexColumnStart w35 col">
+					<span class="head-fila">Perrito 1</span>
+					<p>Descripción perrito 1</p>
+				</div>
+				<div class="flexColumnStart w15 col"><span class="precio-fila">$9,90</span><br /></div>
+			</div>
+			<div class="flex fila-carta">
+				<div class="flexColumnStart w35 col">
+					<span class="head-fila">Bocadillo 2</span>
+					<p>Descripción bocadillo 2</p>
+				</div>
+				<div class="flexColumnStart w15 col"><span class="precio-fila">$9,90</span><br /></div>
+				<div class="flexColumnStart w35 col">
+					<span class="head-fila">Perrito 2</span>
+					<p>Descripción perrito 2</p>
+				</div>
+				<div class="flexColumnStart w15 col"><span class="precio-fila">$9,90</span><br /></div>
+			</div>
+			<div class="flex fila-carta">
+				<div class="flexColumnStart w35 col">
+					<span class="head-fila">Bocadillo 3</span>
+					<p>Descripción bocadillo 3</p>
+				</div>
+				<div class="flexColumnStart w15 col"><span class="precio-fila">$9,90</span><br /></div>
+				<div class="flexColumnStart w35 col">
+					<span class="head-fila">Perrito 3</span>
+					<p>Descripción perrito 3</p>
+				</div>
+				<div class="flexColumnStart w15 col"><span class="precio-fila">$9,90</span><br /></div>
+			</div>
+			<div class="flex fila-carta">
+				<div class="flexColumnStart w35 col">
+					<span class="head-fila">Bocadillo 4</span>
+					<p>Descripción bocadillo 4</p>
+				</div>
+				<div class="flexColumnStart w15 col"><span class="precio-fila">$9,90</span><br /></div>
+				<div class="flexColumnStart w35 col">
+					<span class="head-fila">Perrito 4</span>
+					<p>Descripción perrito 4</p>
+				</div>
+				<div class="flexColumnStart w15 col"><span class="precio-fila">$9,90</span><br /></div>
+			</div>
+			<div class="flex fila-carta">
+				<div class="flexColumnStart w35 col">
+					<span class="head-fila">Bocadillo 5</span>
+					<p>Descripción bocadillo 5</p>
+				</div>
+				<div class="flexColumnStart w15 col"><span class="precio-fila">$9,90</span><br /></div>
+				<div class="flexColumnStart w35 col">
+					<span class="head-fila">Perrito 5</span>
+					<p>Descripción perrito 5</p>
+				</div>
+				<div class="flexColumnStart w15 col"><span class="precio-fila">$9,90</span><br /></div>
+			</div>
+		</section>
+		<section class="flex bg-bebidas im-bg mb-50">
+			<div class="carta-texto">
+				BEBIDAS
+			</div>
+		</section>
+		<section class="carta">
+			<div class="flex fila-carta">
+				<div class="flexColumnStart w35 col">
+					<span class="head-fila">Bebida 1</span>
+					<p>Descripción bebida 1</p>
+				</div>
+				<div class="flexColumnStart w15 col"><span class="precio-fila">$9,90</span><br /></div>
+				<div class="flexColumnStart w35 col">
+					<span class="head-fila">Bebida 2</span>
+					<p>Descripción bebida 2</p>
+				</div>
+				<div class="flexColumnStart w15 col"><span class="precio-fila">$9,90</span><br /></div>
+			</div>
+			<div class="flex fila-carta">
+				<div class="flexColumnStart w35 col">
+					<span class="head-fila">Bebida 3</span>
+					<p>Descripción bebida 3</p>
+				</div>
+				<div class="flexColumnStart w15 col"><span class="precio-fila">$9,90</span><br /></div>
+				<div class="flexColumnStart w35 col">
+					<span class="head-fila">Bebida 4</span>
+					<p>Descripción bebida 4</p>
+				</div>
+				<div class="flexColumnStart w15 col"><span class="precio-fila">$9,90</span><br /></div>
+			</div>
+			<div class="flex fila-carta">
+				<div class="flexColumnStart w35 col">
+					<span class="head-fila">Bebida 5</span>
+					<p>Descripción bebida 5</p>
+				</div>
+				<div class="flexColumnStart w15 col"><span class="precio-fila">$9,90</span><br /></div>
+				<div class="flexColumnStart w35 col">
+					<span class="head-fila">Bebida 6</span>
+					<p>Descripción bebida 6</p>
+				</div>
+				<div class="flexColumnStart w15 col"><span class="precio-fila">$9,90</span><br /></div>
+			</div>
+			<div class="flex fila-carta">
+				<div class="flexColumnStart w35 col">
+					<span class="head-fila">Bebida 7</span>
+					<p>Descripción bebida 7</p>
+				</div>
+				<div class="flexColumnStart w15 col"><span class="precio-fila">$9,90</span><br /></div>
+				<div class="flexColumnStart w35 col">
+					<span class="head-fila">Bebida 8</span>
+					<p>Descripción bebida 8</p>
+				</div>
+				<div class="flexColumnStart w15 col"><span class="precio-fila">$9,90</span><br /></div>
+			</div>
+			<div class="flex fila-carta">
+				<div class="flexColumnStart w35 col">
+					<span class="head-fila">Bebida 9</span>
+					<p>Descripción bebida 9</p>
+				</div>
+				<div class="flexColumnStart w15 col"><span class="precio-fila">$9,90</span><br /></div>
+				<div class="flexColumnStart w35 col">
+					<span class="head-fila">Bebida 10</span>
+					<p>Descripción bebida 10</p>
+				</div>
+				<div class="flexColumnStart w15 col"><span class="precio-fila">$9,90</span><br /></div>
+			</div>
+		</section>
+
+		<footer class="w100 flexRow">
+			<div class="pie-izda flex">
+				<!-- Logo-->
+				<div class="logo">
+					<a href="index.html"><img id="logo-pie" src="imagenes/logo.png" alt="logo" /> </a>
+				</div>
+				<!-- Contacto-->
+				<div class="contacto">
+					<i class="fas fa-mobile-alt fa-1x"></i>&nbsp;&nbsp;&nbsp;&nbsp;+34 943 42 07 03<br />
+					De Lunes a Domingo<br />
+					Ttipi_Ttapa@gmail.com
+				</div>
+			</div>
+			<!-- Redes Sociales-->
+			<div class="pie-dcha">
+				Politica de Privacidad<br />
+				Aviso Legal<br />
+				Copyright Ttipi-Ttapa 2020<br />
+				Siguenos en: <i class="fab fa-facebook-f fa-1x"></i>&nbsp;
+				<i class="fab fa-instagram fa-1x"></i>&nbsp; <i class="fab fa-twitter fa-1x"></i>&nbsp;
+			</div>
+		</footer>
+		<script>
+			$(document).ready(function () {
+				/*$("ul")
+					.find("li a")
+					.click(function () {
+						$("ul li a").removeClass("active");
+						$(this).addClass("active");
+					});	*/			
+				$(".btn-burger").click(function () {
+					//$("nav").slideToggle();
+					//$("nav").toggleClass("visible oculto");
+					if ($("nav").hasClass("visible")) $("nav").addClass("oculto").removeClass("visible");
+					else $("nav").addClass("visible").removeClass("oculto");
+
+					if ($("#burger").attr("src") == "imagenes/burger-white.png")
+						$("#burger").attr("src", "imagenes/close-white.png");
+					else {
+						$("#burger").attr("src", "imagenes/burger-white.png");
+					}
+				});
+
+				$(window).resize(function () {
+					if ($(window).width() > 640) $("nav").addClass("visible").removeClass("oculto");
+					else {
+						$("nav").addClass("oculto").removeClass("visible");
+						$("#burger").attr("src", "imagenes/burger-white.png");
+					}
+				});
+
+				// para que cierre el menu, solo en resolución menor que 640px
+				$("#menu-movil li a").click(function () {
+					if ($(window).width() <= 640) {
+						$("nav").slideUp();
+					}
+				});
+			});
+		</script>
+	</body>
+</html>
