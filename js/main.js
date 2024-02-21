@@ -57,13 +57,13 @@ $(document).ready(function () {
 
 	$("#backend-1")
 		.circleProgress({
-			value: 0.7,
+			value: 0.90,
 			fill: "green",
 		})
 		.on("circle-animation-progress", function (event, progress) {
 			$(this)
 				.find("strong")
-				.html(Math.round(70 * progress) + "<i>%</i>");
+				.html(Math.round(90 * progress) + "<i>%</i>");
 		});
 
 	$("#backend-2")
@@ -89,24 +89,24 @@ $(document).ready(function () {
 
 	$("#backend-4")
 		.circleProgress({
-			value: 0.75,
+			value: 0.80,
 			fill: "purple",
 		})
 		.on("circle-animation-progress", function (event, progress) {
 			$(this)
 				.find("strong")
-				.html(Math.round(75 * progress) + "<i>%</i>");
+				.html(Math.round(80 * progress) + "<i>%</i>");
 		});
 
 	$("#backend-5")
 		.circleProgress({
-			value: 0.65,
+			value: 0.80,
 			fill: "blue",
 		})
 		.on("circle-animation-progress", function (event, progress) {
 			$(this)
 				.find("strong")
-				.html(Math.round(65 * progress) + "<i>%</i>");
+				.html(Math.round(80 * progress) + "<i>%</i>");
 		});
 
 	$("#backend-6")
